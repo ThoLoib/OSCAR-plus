@@ -1,0 +1,6591 @@
+{
+  "experiment": "stage4a_onboarding",
+  "base_gallery": "G_proxy (3b) = gso + housecat6d + itodd = 1257",
+  "stages": [
+    "mesh",
+    "describe",
+    "embed"
+  ],
+  "view_counts": [
+    16,
+    42
+  ],
+  "n_objects": 59,
+  "provenance": {
+    "timestamp": "2026-09-07T16:03:01+0000",
+    "git_commit": "",
+    "torch": "2.10.0+cu128",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_mem_gb": 25.3,
+    "cpu_count": 24
+  },
+  "model_load_once_s": {
+    "load_encoders": 5.084119295934215
+  },
+  "by_views": {
+    "16": {
+      "per_step": {
+        "mesh": {
+          "n": 59,
+          "median": 0.10237554484046996,
+          "mean": 0.22822255961660107,
+          "std": 0.3739754814734904,
+          "min": 0.014760904014110565,
+          "max": 2.3381708241067827,
+          "q25": 0.04785590851679444,
+          "q75": 0.3183651005383581,
+          "iqr": 0.27050919202156365,
+          "p95": 0.3437491489574313,
+          "sum": 13.465131017379463
+        },
+        "describe": {
+          "n": 59,
+          "median": 10.27495309105143,
+          "mean": 10.37784811080102,
+          "std": 0.5425685546254662,
+          "min": 10.100256588077173,
+          "max": 14.322426588041708,
+          "q25": 10.223554591997527,
+          "q75": 10.358059108955786,
+          "iqr": 0.13450451695825905,
+          "p95": 10.696826926409267,
+          "sum": 612.2930385372601
+        },
+        "io_load_images": {
+          "n": 59,
+          "median": 0.056532422080636024,
+          "mean": 0.05734167245642866,
+          "std": 0.007884088733385869,
+          "min": 0.04117883509024978,
+          "max": 0.08662925497628748,
+          "q25": 0.05388770857825875,
+          "q75": 0.06053535104729235,
+          "iqr": 0.006647642469033599,
+          "p95": 0.06981508824974297,
+          "sum": 3.383158674929291
+        },
+        "embed_dino": {
+          "n": 59,
+          "median": 0.11915984097868204,
+          "mean": 0.12200061620560364,
+          "std": 0.01722512448384605,
+          "min": 0.11598067288286984,
+          "max": 0.2511316949967295,
+          "q25": 0.11874072905629873,
+          "q75": 0.1202609424944967,
+          "iqr": 0.0015202134381979704,
+          "p95": 0.12676690034568308,
+          "sum": 7.198036356130615
+        },
+        "embed_clip": {
+          "n": 59,
+          "median": 0.004406374879181385,
+          "mean": 0.0066041500086627776,
+          "std": 0.016856261081124885,
+          "min": 0.0042608450166881084,
+          "max": 0.1338825048878789,
+          "q25": 0.0043346850434318185,
+          "q75": 0.004468100378289819,
+          "iqr": 0.00013341533485800028,
+          "p95": 0.0045317638432607055,
+          "sum": 0.38964485051110387
+        },
+        "mesh_sample": {
+          "n": 59,
+          "median": 0.08541663899086416,
+          "mean": 0.20015890322925556,
+          "std": 0.1945646415309875,
+          "min": 0.012691492913290858,
+          "max": 0.4977293258998543,
+          "q25": 0.037734315963461995,
+          "q75": 0.43219957046676427,
+          "iqr": 0.3944652545033023,
+          "p95": 0.48112717003095895,
+          "sum": 11.809375290526077
+        },
+        "embed_ulip": {
+          "n": 59,
+          "median": 0.03716099099256098,
+          "mean": 0.03880089673339942,
+          "std": 0.011070765178527186,
+          "min": 0.035587154095992446,
+          "max": 0.12139700399711728,
+          "q25": 0.03649270907044411,
+          "q75": 0.03768476645927876,
+          "iqr": 0.0011920573888346553,
+          "p95": 0.039676798717118794,
+          "sum": 2.2892529072705656
+        },
+        "cache_load": {
+          "n": 59,
+          "median": 0.048399906838312745,
+          "mean": 0.053113169668210766,
+          "std": 0.007936733615843213,
+          "min": 0.046189573127776384,
+          "max": 0.0841952608898282,
+          "q25": 0.04771198856178671,
+          "q75": 0.060248579597100616,
+          "iqr": 0.012536591035313904,
+          "p95": 0.06332857341039926,
+          "sum": 3.133677010424435
+        },
+        "cache_insert": {
+          "n": 59,
+          "median": 2.8060050681233406e-05,
+          "mean": 2.8355974483035378e-05,
+          "std": 3.002542924221539e-06,
+          "min": 2.4970155209302902e-05,
+          "max": 4.77498397231102e-05,
+          "q25": 2.6825000531971455e-05,
+          "q75": 2.8920010663568974e-05,
+          "iqr": 2.095010131597519e-06,
+          "p95": 3.0661979690194126e-05,
+          "sum": 0.0016730024944990873
+        },
+        "cache_save": {
+          "n": 59,
+          "median": 0.17143428092822433,
+          "mean": 0.1737204230572018,
+          "std": 0.01725265483246694,
+          "min": 0.16721307602711022,
+          "max": 0.3016398649197072,
+          "q25": 0.1686031793942675,
+          "q75": 0.17411385593004525,
+          "iqr": 0.005510676535777748,
+          "p95": 0.17694697261322287,
+          "sum": 10.249504960374907
+        }
+      },
+      "per_object_total_s": {
+        "n": 59,
+        "median": 10.960139600094408,
+        "mean": 11.257838857750865,
+        "std": 0.7972141407340535,
+        "min": 10.658555731875822,
+        "max": 15.943990556756034,
+        "q25": 10.776763844769448,
+        "q75": 11.509753645397723,
+        "iqr": 0.7329898006282747,
+        "p95": 12.210575619689186,
+        "sum": 664.2124926073011
+      }
+    },
+    "42": {
+      "per_step": {
+        "mesh": {
+          "n": 59,
+          "median": 0.09889312298037112,
+          "mean": 0.22498991105989632,
+          "std": 0.3633673198003336,
+          "min": 0.014301961986348033,
+          "max": 2.2642503939568996,
+          "q25": 0.04474065743852407,
+          "q75": 0.311278082546778,
+          "iqr": 0.26653742510825396,
+          "p95": 0.3437488672323525,
+          "sum": 13.274404752533883
+        },
+        "describe": {
+          "n": 59,
+          "median": 11.750943304039538,
+          "mean": 11.775529227322126,
+          "std": 0.08868642797381898,
+          "min": 11.592312484048307,
+          "max": 11.963157596997917,
+          "q25": 11.71695038897451,
+          "q75": 11.839697506977245,
+          "iqr": 0.12274711800273508,
+          "p95": 11.926255150930956,
+          "sum": 694.7562244120054
+        },
+        "io_load_images": {
+          "n": 59,
+          "median": 0.13916013203561306,
+          "mean": 0.14041756687022872,
+          "std": 0.017740124980642487,
+          "min": 0.10052448487840593,
+          "max": 0.193420427152887,
+          "q25": 0.13294512045104057,
+          "q75": 0.14831968559883535,
+          "iqr": 0.015374565147794783,
+          "p95": 0.17705898627173156,
+          "sum": 8.284636445343494
+        },
+        "embed_dino": {
+          "n": 59,
+          "median": 0.2906714309938252,
+          "mean": 0.29101720994133184,
+          "std": 0.0045493484059398095,
+          "min": 0.278327742125839,
+          "max": 0.3018012389075011,
+          "q25": 0.2882381174713373,
+          "q75": 0.2937436089850962,
+          "iqr": 0.005505491513758898,
+          "p95": 0.29934343956410886,
+          "sum": 17.17001538653858
+        },
+        "embed_clip": {
+          "n": 59,
+          "median": 0.004386760061606765,
+          "mean": 0.004392694074155415,
+          "std": 7.378164913245263e-05,
+          "min": 0.004283366026356816,
+          "max": 0.004603429930284619,
+          "q25": 0.004332476994022727,
+          "q75": 0.004434922011569142,
+          "iqr": 0.00010244501754641533,
+          "p95": 0.004519767919555306,
+          "sum": 0.2591689503751695
+        },
+        "mesh_sample": {
+          "n": 59,
+          "median": 0.0841137410607189,
+          "mean": 0.20300934670524576,
+          "std": 0.20022026930280537,
+          "min": 0.0122156769502908,
+          "max": 0.5091165518388152,
+          "q25": 0.03493822005111724,
+          "q75": 0.4434700064593926,
+          "iqr": 0.40853178640827537,
+          "p95": 0.4995605840813368,
+          "sum": 11.9775514556095
+        },
+        "embed_ulip": {
+          "n": 59,
+          "median": 0.0366556600201875,
+          "mean": 0.03675534093547297,
+          "std": 0.0006583379782430283,
+          "min": 0.035779085010290146,
+          "max": 0.03897456987760961,
+          "q25": 0.036294431891292334,
+          "q75": 0.03718291153199971,
+          "iqr": 0.0008884796407073736,
+          "p95": 0.03766211981419473,
+          "sum": 2.168565115192905
+        },
+        "cache_load": {
+          "n": 59,
+          "median": 0.048508484149351716,
+          "mean": 0.055631420638222816,
+          "std": 0.019692502937208325,
+          "min": 0.04595526214689016,
+          "max": 0.1932621558662504,
+          "q25": 0.04734999255742878,
+          "q75": 0.06249973736703396,
+          "iqr": 0.015149744809605181,
+          "p95": 0.06487811075057834,
+          "sum": 3.282253817655146
+        },
+        "cache_insert": {
+          "n": 59,
+          "median": 0.0001038599293678999,
+          "mean": 0.00026293156147634577,
+          "std": 0.0004825095513622275,
+          "min": 8.071004413068295e-05,
+          "max": 0.0037453030236065388,
+          "q25": 9.51655674725771e-05,
+          "q75": 0.0003369268961250782,
+          "iqr": 0.0002417613286525011,
+          "p95": 0.0004738600226119159,
+          "sum": 0.015512962127104402
+        },
+        "cache_save": {
+          "n": 59,
+          "median": 0.17163305403664708,
+          "mean": 0.17173938485556992,
+          "std": 0.0026231745176488563,
+          "min": 0.1681574061512947,
+          "max": 0.18050279305316508,
+          "q25": 0.1695625480497256,
+          "q75": 0.17307793558575213,
+          "iqr": 0.0035153875360265374,
+          "p95": 0.17621673110406846,
+          "sum": 10.132623706478626
+        }
+      },
+      "per_object_total_s": {
+        "n": 59,
+        "median": 12.721373660722747,
+        "mean": 12.903745033963725,
+        "std": 0.47416601642255973,
+        "min": 12.340333160245791,
+        "max": 15.041306847240776,
+        "q25": 12.560212917043827,
+        "q75": 13.187218725332059,
+        "iqr": 0.6270058082882315,
+        "p95": 13.356234240881168,
+        "sum": 761.3209570038598
+      }
+    }
+  },
+  "records": [
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000001",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000001/textured_simple.obj",
+      "vertices": 9951,
+      "faces": 15728,
+      "diameter": 0.2014908513382183,
+      "file_mb": 1.611,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.3217802098952234
+        ],
+        "describe": [
+          14.322426588041708
+        ],
+        "io_load_images": [
+          0.08662925497628748
+        ],
+        "embed_dino": [
+          0.2511316949967295
+        ],
+        "embed_clip": [
+          0.1338825048878789
+        ],
+        "mesh_sample": [
+          0.47351746703498065
+        ],
+        "embed_ulip": [
+          0.12139700399711728
+        ],
+        "cache_load": [
+          0.06395318591967225
+        ],
+        "cache_insert": [
+          2.8750160709023476e-05
+        ],
+        "cache_save": [
+          0.16924389684572816
+        ]
+      },
+      "total_s": 15.943990556756034
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000002",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000002/textured_simple.obj",
+      "vertices": 8291,
+      "faces": 15728,
+      "diameter": 0.27858633957536394,
+      "file_mb": 1.593,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.3212473071180284
+        ],
+        "describe": [
+          10.868359009036794
+        ],
+        "io_load_images": [
+          0.06956219905987382
+        ],
+        "embed_dino": [
+          0.11860535689629614
+        ],
+        "embed_clip": [
+          0.004371484043076634
+        ],
+        "mesh_sample": [
+          0.4977293258998543
+        ],
+        "embed_ulip": [
+          0.03736808290705085
+        ],
+        "cache_load": [
+          0.0841952608898282
+        ],
+        "cache_insert": [
+          2.8060050681233406e-05
+        ],
+        "cache_save": [
+          0.16821855190210044
+        ]
+      },
+      "total_s": 12.169684637803584
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000003",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000003/textured_simple.obj",
+      "vertices": 8300,
+      "faces": 15728,
+      "diameter": 0.20562323425381676,
+      "file_mb": 1.594,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.3300445268396288
+        ],
+        "describe": [
+          10.565186131047085
+        ],
+        "io_load_images": [
+          0.060409666039049625
+        ],
+        "embed_dino": [
+          0.11856814683414996
+        ],
+        "embed_clip": [
+          0.004396484000608325
+        ],
+        "mesh_sample": [
+          0.4804962878115475
+        ],
+        "embed_ulip": [
+          0.036335858050733805
+        ],
+        "cache_load": [
+          0.059788820100948215
+        ],
+        "cache_insert": [
+          2.6159919798374176e-05
+        ],
+        "cache_save": [
+          0.16765656904317439
+        ]
+      },
+      "total_s": 11.822908649686724
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000004",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000004/textured_simple.obj",
+      "vertices": 8404,
+      "faces": 15728,
+      "diameter": 0.14002063128339337,
+      "file_mb": 1.595,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.3210991539526731
+        ],
+        "describe": [
+          10.283221819903702
+        ],
+        "io_load_images": [
+          0.07209109095856547
+        ],
+        "embed_dino": [
+          0.11808912502601743
+        ],
+        "embed_clip": [
+          0.004332454176619649
+        ],
+        "mesh_sample": [
+          0.4727264510001987
+        ],
+        "embed_ulip": [
+          0.03661035979166627
+        ],
+        "cache_load": [
+          0.05963751091621816
+        ],
+        "cache_insert": [
+          2.832990139722824e-05
+        ],
+        "cache_save": [
+          0.16721307602711022
+        ]
+      },
+      "total_s": 11.535049371654168
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000005",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000005/textured_simple.obj",
+      "vertices": 10983,
+      "faces": 15728,
+      "diameter": 0.22475193086156126,
+      "file_mb": 1.652,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.32120908610522747
+        ],
+        "describe": [
+          10.162150027928874
+        ],
+        "io_load_images": [
+          0.05613939999602735
+        ],
+        "embed_dino": [
+          0.1185897768009454
+        ],
+        "embed_clip": [
+          0.004410524852573872
+        ],
+        "mesh_sample": [
+          0.4809387777931988
+        ],
+        "embed_ulip": [
+          0.036740649957209826
+        ],
+        "cache_load": [
+          0.05808351212181151
+        ],
+        "cache_insert": [
+          2.9510818421840668e-05
+        ],
+        "cache_save": [
+          0.16786593897268176
+        ]
+      },
+      "total_s": 11.406157205346972
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000006",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000006/textured_simple.obj",
+      "vertices": 8227,
+      "faces": 15728,
+      "diameter": 0.12555757331598918,
+      "file_mb": 1.593,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.3194323959760368
+        ],
+        "describe": [
+          10.32683845795691
+        ],
+        "io_load_images": [
+          0.06093835807405412
+        ],
+        "embed_dino": [
+          0.11946581304073334
+        ],
+        "embed_clip": [
+          0.004524225136265159
+        ],
+        "mesh_sample": [
+          0.47403581999242306
+        ],
+        "embed_ulip": [
+          0.037497094133868814
+        ],
+        "cache_load": [
+          0.06088061910122633
+        ],
+        "cache_insert": [
+          2.6910100132226944e-05
+        ],
+        "cache_save": [
+          0.17371819191612303
+        ]
+      },
+      "total_s": 11.577357885427773
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000007",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000007/textured_simple.obj",
+      "vertices": 8331,
+      "faces": 15728,
+      "diameter": 0.19260531241115858,
+      "file_mb": 1.596,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.34114685910753906
+        ],
+        "describe": [
+          10.20713569689542
+        ],
+        "io_load_images": [
+          0.05290592182427645
+        ],
+        "embed_dino": [
+          0.1184973178897053
+        ],
+        "embed_clip": [
+          0.004483685130253434
+        ],
+        "mesh_sample": [
+          0.48617271007969975
+        ],
+        "embed_ulip": [
+          0.03732212306931615
+        ],
+        "cache_load": [
+          0.0596403309609741
+        ],
+        "cache_insert": [
+          2.598017454147339e-05
+        ],
+        "cache_save": [
+          0.3016398649197072
+        ]
+      },
+      "total_s": 11.608970490051433
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000008",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000008/textured_simple.obj",
+      "vertices": 8268,
+      "faces": 15728,
+      "diameter": 0.1382554169137687,
+      "file_mb": 1.593,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.30799615988507867
+        ],
+        "describe": [
+          10.247372176963836
+        ],
+        "io_load_images": [
+          0.06475477106869221
+        ],
+        "embed_dino": [
+          0.11882624891586602
+        ],
+        "embed_clip": [
+          0.004438673844560981
+        ],
+        "mesh_sample": [
+          0.45496457000263035
+        ],
+        "embed_ulip": [
+          0.03750027506612241
+        ],
+        "cache_load": [
+          0.06078975601121783
+        ],
+        "cache_insert": [
+          3.0349940061569214e-05
+        ],
+        "cache_save": [
+          0.18255356512963772
+        ]
+      },
+      "total_s": 11.479226546827704
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000009",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000009/textured_simple.obj",
+      "vertices": 8342,
+      "faces": 15728,
+      "diameter": 0.14513097044394074,
+      "file_mb": 1.595,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.3463745911139995
+        ],
+        "describe": [
+          10.226357338950038
+        ],
+        "io_load_images": [
+          0.08126530610024929
+        ],
+        "embed_dino": [
+          0.11841597617603838
+        ],
+        "embed_clip": [
+          0.004331184085458517
+        ],
+        "mesh_sample": [
+          0.46917241299524903
+        ],
+        "embed_ulip": [
+          0.036118256859481335
+        ],
+        "cache_load": [
+          0.06067499495111406
+        ],
+        "cache_insert": [
+          2.6300083845853806e-05
+        ],
+        "cache_save": [
+          0.16828567208722234
+        ]
+      },
+      "total_s": 11.511022033402696
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000010",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000010/textured_simple.obj",
+      "vertices": 10710,
+      "faces": 15728,
+      "diameter": 0.21220759054048938,
+      "file_mb": 1.649,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.2703830760437995
+        ],
+        "describe": [
+          10.356593625852838
+        ],
+        "io_load_images": [
+          0.048135653836652637
+        ],
+        "embed_dino": [
+          0.11873213015496731
+        ],
+        "embed_clip": [
+          0.004439975135028362
+        ],
+        "mesh_sample": [
+          0.4353759288787842
+        ],
+        "embed_ulip": [
+          0.03887842199765146
+        ],
+        "cache_load": [
+          0.07281007687561214
+        ],
+        "cache_insert": [
+          3.057997673749924e-05
+        ],
+        "cache_save": [
+          0.17661798978224397
+        ]
+      },
+      "total_s": 11.521997458534315
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000011",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000011/textured_simple.obj",
+      "vertices": 11912,
+      "faces": 15728,
+      "diameter": 0.31942501306253396,
+      "file_mb": 1.677,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.29817268601618707
+        ],
+        "describe": [
+          10.359524592058733
+        ],
+        "io_load_images": [
+          0.06464613997377455
+        ],
+        "embed_dino": [
+          0.1205447199754417
+        ],
+        "embed_clip": [
+          0.004368385067209601
+        ],
+        "mesh_sample": [
+          0.42902321205474436
+        ],
+        "embed_ulip": [
+          0.04850176814943552
+        ],
+        "cache_load": [
+          0.06325917202048004
+        ],
+        "cache_insert": [
+          3.0100112780928612e-05
+        ],
+        "cache_save": [
+          0.17990781809203327
+        ]
+      },
+      "total_s": 11.56797859352082
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000012",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000012/textured_simple.obj",
+      "vertices": 8251,
+      "faces": 15728,
+      "diameter": 0.27909194431226425,
+      "file_mb": 1.591,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.3179559779819101
+        ],
+        "describe": [
+          10.608749645994976
+        ],
+        "io_load_images": [
+          0.05523023591376841
+        ],
+        "embed_dino": [
+          0.11839037691242993
+        ],
+        "embed_clip": [
+          0.0043619051575660706
+        ],
+        "mesh_sample": [
+          0.4498953118454665
+        ],
+        "embed_ulip": [
+          0.036363907158374786
+        ],
+        "cache_load": [
+          0.06061497703194618
+        ],
+        "cache_insert": [
+          2.5589950382709503e-05
+        ],
+        "cache_save": [
+          0.16771809803321958
+        ]
+      },
+      "total_s": 11.81930602598004
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000013",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000013/textured_simple.obj",
+      "vertices": 8323,
+      "faces": 15728,
+      "diameter": 0.23461301073256785,
+      "file_mb": 1.594,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.2706375480629504
+        ],
+        "describe": [
+          10.737093480071053
+        ],
+        "io_load_images": [
+          0.04570684186182916
+        ],
+        "embed_dino": [
+          0.11902161012403667
+        ],
+        "embed_clip": [
+          0.004333155928179622
+        ],
+        "mesh_sample": [
+          0.39977028500288725
+        ],
+        "embed_ulip": [
+          0.03628100804053247
+        ],
+        "cache_load": [
+          0.06006408203393221
+        ],
+        "cache_insert": [
+          2.6591122150421143e-05
+        ],
+        "cache_save": [
+          0.1690742860082537
+        ]
+      },
+      "total_s": 11.842008888255805
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000014",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000014/textured_simple.obj",
+      "vertices": 16762,
+      "faces": 15728,
+      "diameter": 0.17019799128368115,
+      "file_mb": 1.795,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.3242561831139028
+        ],
+        "describe": [
+          10.38375943293795
+        ],
+        "io_load_images": [
+          0.06066103605553508
+        ],
+        "embed_dino": [
+          0.11896102013997734
+        ],
+        "embed_clip": [
+          0.004391005029901862
+        ],
+        "mesh_sample": [
+          0.4518692831043154
+        ],
+        "embed_ulip": [
+          0.03715928294695914
+        ],
+        "cache_load": [
+          0.06315484084188938
+        ],
+        "cache_insert": [
+          2.7589965611696243e-05
+        ],
+        "cache_save": [
+          0.17143428092822433
+        ]
+      },
+      "total_s": 11.615673955064267
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000015",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000015/textured_simple.obj",
+      "vertices": 9174,
+      "faces": 15728,
+      "diameter": 0.2690009087828515,
+      "file_mb": 1.612,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.32306792796589434
+        ],
+        "describe": [
+          10.20055579696782
+        ],
+        "io_load_images": [
+          0.054518803022801876
+        ],
+        "embed_dino": [
+          0.11915984097868204
+        ],
+        "embed_clip": [
+          0.00444829510524869
+        ],
+        "mesh_sample": [
+          0.46371859195642173
+        ],
+        "embed_ulip": [
+          0.03716099099256098
+        ],
+        "cache_load": [
+          0.060106814140453935
+        ],
+        "cache_insert": [
+          2.584001049399376e-05
+        ],
+        "cache_save": [
+          0.1716991828288883
+        ]
+      },
+      "total_s": 11.434462083969265
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000016",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000016/textured_simple.obj",
+      "vertices": 8920,
+      "faces": 15728,
+      "diameter": 0.2528222747030016,
+      "file_mb": 1.608,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.3434574331622571
+        ],
+        "describe": [
+          10.23614110192284
+        ],
+        "io_load_images": [
+          0.056526541942730546
+        ],
+        "embed_dino": [
+          0.11887705116532743
+        ],
+        "embed_clip": [
+          0.004286285024136305
+        ],
+        "mesh_sample": [
+          0.4828227001708001
+        ],
+        "embed_ulip": [
+          0.037053202046081424
+        ],
+        "cache_load": [
+          0.06079267803579569
+        ],
+        "cache_insert": [
+          2.716085873544216e-05
+        ],
+        "cache_save": [
+          0.1685011030640453
+        ]
+      },
+      "total_s": 11.50848525739275
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000017",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000017/textured_simple.obj",
+      "vertices": 8628,
+      "faces": 15728,
+      "diameter": 0.2238265913424944,
+      "file_mb": 1.601,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.27799932891502976
+        ],
+        "describe": [
+          10.352605809923261
+        ],
+        "io_load_images": [
+          0.04167181788943708
+        ],
+        "embed_dino": [
+          0.1283448338508606
+        ],
+        "embed_clip": [
+          0.004427887033671141
+        ],
+        "mesh_sample": [
+          0.4194653071463108
+        ],
+        "embed_ulip": [
+          0.04050959297455847
+        ],
+        "cache_load": [
+          0.062314286129549146
+        ],
+        "cache_insert": [
+          2.8520124033093452e-05
+        ],
+        "cache_save": [
+          0.17384318308904767
+        ]
+      },
+      "total_s": 11.50121056707576
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000018",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000018/textured_simple.obj",
+      "vertices": 13952,
+      "faces": 15728,
+      "diameter": 0.12410678738489689,
+      "file_mb": 1.726,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.28219907311722636
+        ],
+        "describe": [
+          10.3037432001438
+        ],
+        "io_load_images": [
+          0.05287661193870008
+        ],
+        "embed_dino": [
+          0.12188036809675395
+        ],
+        "embed_clip": [
+          0.004573684884235263
+        ],
+        "mesh_sample": [
+          0.3849970211740583
+        ],
+        "embed_ulip": [
+          0.037306244019418955
+        ],
+        "cache_load": [
+          0.06282568909227848
+        ],
+        "cache_insert": [
+          2.7640024200081825e-05
+        ],
+        "cache_save": [
+          0.17354561295360327
+        ]
+      },
+      "total_s": 11.423975145444274
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000019",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000019/textured_simple.obj",
+      "vertices": 9825,
+      "faces": 15728,
+      "diameter": 0.21274002378490042,
+      "file_mb": 1.625,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.3187742230948061
+        ],
+        "describe": [
+          10.40864391089417
+        ],
+        "io_load_images": [
+          0.04327458795160055
+        ],
+        "embed_dino": [
+          0.11901677888818085
+        ],
+        "embed_clip": [
+          0.00428140489384532
+        ],
+        "mesh_sample": [
+          0.4151817229576409
+        ],
+        "embed_ulip": [
+          0.03641750896349549
+        ],
+        "cache_load": [
+          0.06103615905158222
+        ],
+        "cache_insert": [
+          2.8919894248247147e-05
+        ],
+        "cache_save": [
+          0.17013545194640756
+        ]
+      },
+      "total_s": 11.576790668535978
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000020",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000020/textured_simple.obj",
+      "vertices": 10064,
+      "faces": 15728,
+      "diameter": 0.2689762787198901,
+      "file_mb": 1.631,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.3035836440976709
+        ],
+        "describe": [
+          10.284429891966283
+        ],
+        "io_load_images": [
+          0.04117883509024978
+        ],
+        "embed_dino": [
+          0.12054388807155192
+        ],
+        "embed_clip": [
+          0.004463224904611707
+        ],
+        "mesh_sample": [
+          0.4612465789541602
+        ],
+        "embed_ulip": [
+          0.03729421296156943
+        ],
+        "cache_load": [
+          0.06088719703257084
+        ],
+        "cache_insert": [
+          2.7880072593688965e-05
+        ],
+        "cache_save": [
+          0.1719795041717589
+        ]
+      },
+      "total_s": 11.48563485732302
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000021",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000021/textured_simple.obj",
+      "vertices": 8455,
+      "faces": 15728,
+      "diameter": 0.10697510469730795,
+      "file_mb": 1.596,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.31761545687913895
+        ],
+        "describe": [
+          10.313290597870946
+        ],
+        "io_load_images": [
+          0.059139038901776075
+        ],
+        "embed_dino": [
+          0.11874932795763016
+        ],
+        "embed_clip": [
+          0.0043000951409339905
+        ],
+        "mesh_sample": [
+          0.4269604010041803
+        ],
+        "embed_ulip": [
+          0.03649941901676357
+        ],
+        "cache_load": [
+          0.060390345053747296
+        ],
+        "cache_insert": [
+          2.9559945687651634e-05
+        ],
+        "cache_save": [
+          0.16737785702571273
+        ]
+      },
+      "total_s": 11.504352098796517
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000001",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000001/model.ply",
+      "vertices": 42134,
+      "faces": 84260,
+      "diameter": 78.70364819771389,
+      "file_mb": 3.642,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.28678574110381305
+        ],
+        "describe": [
+          10.26041412493214
+        ],
+        "io_load_images": [
+          0.056532422080636024
+        ],
+        "embed_dino": [
+          0.1194521440193057
+        ],
+        "embed_clip": [
+          0.004347044043242931
+        ],
+        "mesh_sample": [
+          0.19305309397168458
+        ],
+        "embed_ulip": [
+          0.03624290809966624
+        ],
+        "cache_load": [
+          0.04698221990838647
+        ],
+        "cache_insert": [
+          2.5219982489943504e-05
+        ],
+        "cache_save": [
+          0.1677005880046636
+        ]
+      },
+      "total_s": 11.171535506146029
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000002",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000002/model.ply",
+      "vertices": 41063,
+      "faces": 82114,
+      "diameter": 86.92031243096164,
+      "file_mb": 3.564,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.28324685897678137
+        ],
+        "describe": [
+          10.327462908811867
+        ],
+        "io_load_images": [
+          0.055390975903719664
+        ],
+        "embed_dino": [
+          0.11870886012911797
+        ],
+        "embed_clip": [
+          0.004312184173613787
+        ],
+        "mesh_sample": [
+          0.18895122106187046
+        ],
+        "embed_ulip": [
+          0.03618172719143331
+        ],
+        "cache_load": [
+          0.04711968987248838
+        ],
+        "cache_insert": [
+          2.6700086891651154e-05
+        ],
+        "cache_save": [
+          0.16970862983725965
+        ]
+      },
+      "total_s": 11.231109756045043
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000003",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000003/model.ply",
+      "vertices": 47498,
+      "faces": 94992,
+      "diameter": 91.46397836555393,
+      "file_mb": 4.14,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.33556618983857334
+        ],
+        "describe": [
+          10.251164596062154
+        ],
+        "io_load_images": [
+          0.058625806123018265
+        ],
+        "embed_dino": [
+          0.11959936283528805
+        ],
+        "embed_clip": [
+          0.004351963987573981
+        ],
+        "mesh_sample": [
+          0.21999767888337374
+        ],
+        "embed_ulip": [
+          0.03638904797844589
+        ],
+        "cache_load": [
+          0.046978627098724246
+        ],
+        "cache_insert": [
+          2.6730122044682503e-05
+        ],
+        "cache_save": [
+          0.16853931383229792
+        ]
+      },
+      "total_s": 11.241239316761494
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000004",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000004/model.ply",
+      "vertices": 3689,
+      "faces": 7374,
+      "diameter": 96.3457964262254,
+      "file_mb": 0.303,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.02167268400080502
+        ],
+        "describe": [
+          10.260634808801115
+        ],
+        "io_load_images": [
+          0.05664628394879401
+        ],
+        "embed_dino": [
+          0.127469499129802
+        ],
+        "embed_clip": [
+          0.004983728053048253
+        ],
+        "mesh_sample": [
+          0.02179996483027935
+        ],
+        "embed_ulip": [
+          0.03754793503321707
+        ],
+        "cache_load": [
+          0.04887267015874386
+        ],
+        "cache_insert": [
+          2.8009992092847824e-05
+        ],
+        "cache_save": [
+          0.17277766694314778
+        ]
+      },
+      "total_s": 10.752433250891045
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000005",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000005/model.ply",
+      "vertices": 12806,
+      "faces": 25614,
+      "diameter": 123.96874606125529,
+      "file_mb": 1.076,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.0681542488746345
+        ],
+        "describe": [
+          10.255922473035753
+        ],
+        "io_load_images": [
+          0.05506973480805755
+        ],
+        "embed_dino": [
+          0.11995883495546877
+        ],
+        "embed_clip": [
+          0.004426094936206937
+        ],
+        "mesh_sample": [
+          0.0608404790982604
+        ],
+        "embed_ulip": [
+          0.03776558511890471
+        ],
+        "cache_load": [
+          0.048838258953765035
+        ],
+        "cache_insert": [
+          2.917996607720852e-05
+        ],
+        "cache_save": [
+          0.17428283719345927
+        ]
+      },
+      "total_s": 10.825287726940587
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000006",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000006/model.ply",
+      "vertices": 2840,
+      "faces": 5700,
+      "diameter": 116.50154622504867,
+      "file_mb": 0.23,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.01806859183125198
+        ],
+        "describe": [
+          10.225896154996008
+        ],
+        "io_load_images": [
+          0.05515778483822942
+        ],
+        "embed_dino": [
+          0.11864996794611216
+        ],
+        "embed_clip": [
+          0.0042608450166881084
+        ],
+        "mesh_sample": [
+          0.014308930840343237
+        ],
+        "embed_ulip": [
+          0.035587154095992446
+        ],
+        "cache_load": [
+          0.046189573127776384
+        ],
+        "cache_insert": [
+          2.8940150514245033e-05
+        ],
+        "cache_save": [
+          0.1682801831047982
+        ]
+      },
+      "total_s": 10.686428125947714
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000007",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000007/model.ply",
+      "vertices": 8517,
+      "faces": 17106,
+      "diameter": 185.13403326462466,
+      "file_mb": 0.704,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.05241330899298191
+        ],
+        "describe": [
+          10.222209013067186
+        ],
+        "io_load_images": [
+          0.05727618909440935
+        ],
+        "embed_dino": [
+          0.11934719095006585
+        ],
+        "embed_clip": [
+          0.004376915050670505
+        ],
+        "mesh_sample": [
+          0.03953730687499046
+        ],
+        "embed_ulip": [
+          0.03726514196023345
+        ],
+        "cache_load": [
+          0.04772475315257907
+        ],
+        "cache_insert": [
+          3.343098796904087e-05
+        ],
+        "cache_save": [
+          0.16946412879042327
+        ]
+      },
+      "total_s": 10.749647378921509
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000008",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000008/model.ply",
+      "vertices": 11368,
+      "faces": 22812,
+      "diameter": 222.08631604336702,
+      "file_mb": 0.949,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.07741556200198829
+        ],
+        "describe": [
+          10.267394869122654
+        ],
+        "io_load_images": [
+          0.05745602794922888
+        ],
+        "embed_dino": [
+          0.11852834885939956
+        ],
+        "embed_clip": [
+          0.004381715087220073
+        ],
+        "mesh_sample": [
+          0.05427045002579689
+        ],
+        "embed_ulip": [
+          0.03802646812982857
+        ],
+        "cache_load": [
+          0.048470296896994114
+        ],
+        "cache_insert": [
+          2.7470989152789116e-05
+        ],
+        "cache_save": [
+          0.17342587211169302
+        ]
+      },
+      "total_s": 10.839397081173956
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000009",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000009/model.ply",
+      "vertices": 7046,
+      "faces": 14120,
+      "diameter": 157.46381151691241,
+      "file_mb": 0.576,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.04724056087434292
+        ],
+        "describe": [
+          10.433967310935259
+        ],
+        "io_load_images": [
+          0.0629146199207753
+        ],
+        "embed_dino": [
+          0.11948664393275976
+        ],
+        "embed_clip": [
+          0.004415584960952401
+        ],
+        "mesh_sample": [
+          0.03593132505193353
+        ],
+        "embed_ulip": [
+          0.036988671170547605
+        ],
+        "cache_load": [
+          0.04801509412936866
+        ],
+        "cache_insert": [
+          2.657109871506691e-05
+        ],
+        "cache_save": [
+          0.1711532180197537
+        ]
+      },
+      "total_s": 10.960139600094408
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000010",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000010/model.ply",
+      "vertices": 9193,
+      "faces": 18434,
+      "diameter": 110.9197371288087,
+      "file_mb": 0.754,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.06253464915789664
+        ],
+        "describe": [
+          10.226818643976003
+        ],
+        "io_load_images": [
+          0.05453275190666318
+        ],
+        "embed_dino": [
+          0.11924688098952174
+        ],
+        "embed_clip": [
+          0.004314824938774109
+        ],
+        "mesh_sample": [
+          0.04217398096807301
+        ],
+        "embed_ulip": [
+          0.036485999124124646
+        ],
+        "cache_load": [
+          0.047336390940472484
+        ],
+        "cache_insert": [
+          4.77498397231102e-05
+        ],
+        "cache_save": [
+          0.16767856804654002
+        ]
+      },
+      "total_s": 10.761170439887792
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000011",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000011/model.ply",
+      "vertices": 21284,
+      "faces": 42622,
+      "diameter": 98.89339494974425,
+      "file_mb": 1.823,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.14485355792567134
+        ],
+        "describe": [
+          10.69235286489129
+        ],
+        "io_load_images": [
+          0.05959493084810674
+        ],
+        "embed_dino": [
+          0.12003851612098515
+        ],
+        "embed_clip": [
+          0.004334044177085161
+        ],
+        "mesh_sample": [
+          0.10035298415459692
+        ],
+        "embed_ulip": [
+          0.037521216087043285
+        ],
+        "cache_load": [
+          0.04794877301901579
+        ],
+        "cache_insert": [
+          2.4970155209302902e-05
+        ],
+        "cache_save": [
+          0.1707571279257536
+        ]
+      },
+      "total_s": 11.377778985304758
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000012",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000012/model.ply",
+      "vertices": 22069,
+      "faces": 44154,
+      "diameter": 112.51758825903434,
+      "file_mb": 1.897,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.15513595612719655
+        ],
+        "describe": [
+          10.41095128795132
+        ],
+        "io_load_images": [
+          0.05595250893384218
+        ],
+        "embed_dino": [
+          0.11867314903065562
+        ],
+        "embed_clip": [
+          0.004393615061417222
+        ],
+        "mesh_sample": [
+          0.1032451600767672
+        ],
+        "embed_ulip": [
+          0.036843659821897745
+        ],
+        "cache_load": [
+          0.0475015421397984
+        ],
+        "cache_insert": [
+          2.8221169486641884e-05
+        ],
+        "cache_save": [
+          0.17153345118276775
+        ]
+      },
+      "total_s": 11.10425855149515
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000013",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000013/model.ply",
+      "vertices": 6385,
+      "faces": 12774,
+      "diameter": 72.9014707061556,
+      "file_mb": 0.519,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.03713727300055325
+        ],
+        "describe": [
+          10.376216436969116
+        ],
+        "io_load_images": [
+          0.05834942287765443
+        ],
+        "embed_dino": [
+          0.11880849092267454
+        ],
+        "embed_clip": [
+          0.004527105949819088
+        ],
+        "mesh_sample": [
+          0.03029059385880828
+        ],
+        "embed_ulip": [
+          0.03704118984751403
+        ],
+        "cache_load": [
+          0.04747539199888706
+        ],
+        "cache_insert": [
+          2.7889851480722427e-05
+        ],
+        "cache_save": [
+          0.17009491310454905
+        ]
+      },
+      "total_s": 10.879968708381057
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000014",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000014/model.ply",
+      "vertices": 6896,
+      "faces": 13788,
+      "diameter": 90.18722701624299,
+      "file_mb": 0.563,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.03990555787459016
+        ],
+        "describe": [
+          10.513883693143725
+        ],
+        "io_load_images": [
+          0.052325040102005005
+        ],
+        "embed_dino": [
+          0.11880623898468912
+        ],
+        "embed_clip": [
+          0.004326244117692113
+        ],
+        "mesh_sample": [
+          0.031761752208694816
+        ],
+        "embed_ulip": [
+          0.03620803612284362
+        ],
+        "cache_load": [
+          0.049467022996395826
+        ],
+        "cache_insert": [
+          2.8449809178709984e-05
+        ],
+        "cache_save": [
+          0.1691248461138457
+        ]
+      },
+      "total_s": 11.01583688147366
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000015",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000015/model.ply",
+      "vertices": 6817,
+      "faces": 13654,
+      "diameter": 83.63351789381497,
+      "file_mb": 0.557,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.039123534923419356
+        ],
+        "describe": [
+          10.348840360995382
+        ],
+        "io_load_images": [
+          0.05917391902767122
+        ],
+        "embed_dino": [
+          0.12069125915877521
+        ],
+        "embed_clip": [
+          0.004440954886376858
+        ],
+        "mesh_sample": [
+          0.03252404602244496
+        ],
+        "embed_ulip": [
+          0.03750817500986159
+        ],
+        "cache_load": [
+          0.048588067991659045
+        ],
+        "cache_insert": [
+          2.626003697514534e-05
+        ],
+        "cache_save": [
+          0.17241658712737262
+        ]
+      },
+      "total_s": 10.863333165179938
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000016",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000016/model.ply",
+      "vertices": 9363,
+      "faces": 18738,
+      "diameter": 91.20060973107691,
+      "file_mb": 0.765,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.053596026962623
+        ],
+        "describe": [
+          10.142800486879423
+        ],
+        "io_load_images": [
+          0.060737367952242494
+        ],
+        "embed_dino": [
+          0.11907251994125545
+        ],
+        "embed_clip": [
+          0.0042726940009742975
+        ],
+        "mesh_sample": [
+          0.0424305631313473
+        ],
+        "embed_ulip": [
+          0.03602713602595031
+        ],
+        "cache_load": [
+          0.04820679500699043
+        ],
+        "cache_insert": [
+          2.806982956826687e-05
+        ],
+        "cache_save": [
+          0.16836999403312802
+        ]
+      },
+      "total_s": 10.675541653763503
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000017",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000017/model.ply",
+      "vertices": 12932,
+      "faces": 25868,
+      "diameter": 163.82977483926618,
+      "file_mb": 1.086,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.07382939290255308
+        ],
+        "describe": [
+          10.35455631883815
+        ],
+        "io_load_images": [
+          0.05770854908041656
+        ],
+        "embed_dino": [
+          0.11936146393418312
+        ],
+        "embed_clip": [
+          0.0043494850397109985
+        ],
+        "mesh_sample": [
+          0.05954010086134076
+        ],
+        "embed_ulip": [
+          0.03687708103097975
+        ],
+        "cache_load": [
+          0.04765362199395895
+        ],
+        "cache_insert": [
+          2.7600210160017014e-05
+        ],
+        "cache_save": [
+          0.16834235307760537
+        ]
+      },
+      "total_s": 10.922245966969058
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000018",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000018/model.ply",
+      "vertices": 18095,
+      "faces": 36210,
+      "diameter": 153.5001112763378,
+      "file_mb": 1.548,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.10237554484046996
+        ],
+        "describe": [
+          10.303700998891145
+        ],
+        "io_load_images": [
+          0.059990483801811934
+        ],
+        "embed_dino": [
+          0.12076154095120728
+        ],
+        "embed_clip": [
+          0.004462804878130555
+        ],
+        "mesh_sample": [
+          0.08660023496486247
+        ],
+        "embed_ulip": [
+          0.03709193202666938
+        ],
+        "cache_load": [
+          0.047861783066764474
+        ],
+        "cache_insert": [
+          2.9739923775196075e-05
+        ],
+        "cache_save": [
+          0.17451562802307308
+        ]
+      },
+      "total_s": 10.93739069136791
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000019",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000019/model.ply",
+      "vertices": 2348,
+      "faces": 4692,
+      "diameter": 111.13730246861311,
+      "file_mb": 0.188,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.014760904014110565
+        ],
+        "describe": [
+          10.402483693091199
+        ],
+        "io_load_images": [
+          0.05325661413371563
+        ],
+        "embed_dino": [
+          0.12017162796109915
+        ],
+        "embed_clip": [
+          0.004500075010582805
+        ],
+        "mesh_sample": [
+          0.012691492913290858
+        ],
+        "embed_ulip": [
+          0.037391063990071416
+        ],
+        "cache_load": [
+          0.048201815923675895
+        ],
+        "cache_insert": [
+          2.643093466758728e-05
+        ],
+        "cache_save": [
+          0.17321407096460462
+        ]
+      },
+      "total_s": 10.866697788937017
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000020",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000020/model.ply",
+      "vertices": 2348,
+      "faces": 4692,
+      "diameter": 121.64805793764239,
+      "file_mb": 0.188,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.014843604993075132
+        ],
+        "describe": [
+          10.312953963177279
+        ],
+        "io_load_images": [
+          0.05561461695469916
+        ],
+        "embed_dino": [
+          0.119922457030043
+        ],
+        "embed_clip": [
+          0.00443746498785913
+        ],
+        "mesh_sample": [
+          0.0127801732160151
+        ],
+        "embed_ulip": [
+          0.037992786848917603
+        ],
+        "cache_load": [
+          0.04789607413113117
+        ],
+        "cache_insert": [
+          2.6469817385077477e-05
+        ],
+        "cache_save": [
+          0.17336202203296125
+        ]
+      },
+      "total_s": 10.779829633189365
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000021",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000021/model.ply",
+      "vertices": 10248,
+      "faces": 20508,
+      "diameter": 118.32230032977498,
+      "file_mb": 0.844,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.05914701917208731
+        ],
+        "describe": [
+          10.27495309105143
+        ],
+        "io_load_images": [
+          0.05867448612116277
+        ],
+        "embed_dino": [
+          0.12041080789640546
+        ],
+        "embed_clip": [
+          0.004477655980736017
+        ],
+        "mesh_sample": [
+          0.04906452004797757
+        ],
+        "embed_ulip": [
+          0.03797406796365976
+        ],
+        "cache_load": [
+          0.048625106923282146
+        ],
+        "cache_insert": [
+          2.88509763777256e-05
+        ],
+        "cache_save": [
+          0.17327491007745266
+        ]
+      },
+      "total_s": 10.826630516210571
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000022",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000022/model.ply",
+      "vertices": 10599,
+      "faces": 21210,
+      "diameter": 118.68455199129082,
+      "file_mb": 0.875,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.0613032600376755
+        ],
+        "describe": [
+          10.390518623869866
+        ],
+        "io_load_images": [
+          0.05817489302717149
+        ],
+        "embed_dino": [
+          0.11881587002426386
+        ],
+        "embed_clip": [
+          0.004442834993824363
+        ],
+        "mesh_sample": [
+          0.050091746961697936
+        ],
+        "embed_ulip": [
+          0.037888737162575126
+        ],
+        "cache_load": [
+          0.04769922397099435
+        ],
+        "cache_insert": [
+          2.8159935027360916e-05
+        ],
+        "cache_save": [
+          0.17542253294959664
+        ]
+      },
+      "total_s": 10.944385882932693
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000023",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000023/model.ply",
+      "vertices": 2947,
+      "faces": 5890,
+      "diameter": 164.75070487266856,
+      "file_mb": 0.239,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.018170205177739263
+        ],
+        "describe": [
+          10.256808653008193
+        ],
+        "io_load_images": [
+          0.04850172810256481
+        ],
+        "embed_dino": [
+          0.12056772992946208
+        ],
+        "embed_clip": [
+          0.004445336060598493
+        ],
+        "mesh_sample": [
+          0.015422628028318286
+        ],
+        "embed_ulip": [
+          0.03779149614274502
+        ],
+        "cache_load": [
+          0.047731732949614525
+        ],
+        "cache_insert": [
+          2.8670066967606544e-05
+        ],
+        "cache_save": [
+          0.1748533898498863
+        ]
+      },
+      "total_s": 10.72432156931609
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000024",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000024/model.ply",
+      "vertices": 10973,
+      "faces": 21946,
+      "diameter": 100.9638860225046,
+      "file_mb": 0.906,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.06526237400248647
+        ],
+        "describe": [
+          10.296289605787024
+        ],
+        "io_load_images": [
+          0.06249924702569842
+        ],
+        "embed_dino": [
+          0.12057619914412498
+        ],
+        "embed_clip": [
+          0.004509936086833477
+        ],
+        "mesh_sample": [
+          0.0533877550624311
+        ],
+        "embed_ulip": [
+          0.03805866790935397
+        ],
+        "cache_load": [
+          0.04835190693847835
+        ],
+        "cache_insert": [
+          2.8899870812892914e-05
+        ],
+        "cache_save": [
+          0.1760526669677347
+        ]
+      },
+      "total_s": 10.865017258794978
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000025",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000025/model.ply",
+      "vertices": 4423,
+      "faces": 8846,
+      "diameter": 129.20927221694544,
+      "file_mb": 0.362,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.02661648183129728
+        ],
+        "describe": [
+          10.276590083958581
+        ],
+        "io_load_images": [
+          0.05602575093507767
+        ],
+        "embed_dino": [
+          0.12668883381411433
+        ],
+        "embed_clip": [
+          0.004474004963412881
+        ],
+        "mesh_sample": [
+          0.02195334597490728
+        ],
+        "embed_ulip": [
+          0.03760346490889788
+        ],
+        "cache_load": [
+          0.04899794002994895
+        ],
+        "cache_insert": [
+          2.944003790616989e-05
+        ],
+        "cache_save": [
+          0.1747187098953873
+        ]
+      },
+      "total_s": 10.77369805634953
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000026",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000026/model.ply",
+      "vertices": 4396,
+      "faces": 8792,
+      "diameter": 129.20183783773587,
+      "file_mb": 0.359,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.026938173919916153
+        ],
+        "describe": [
+          10.19089548708871
+        ],
+        "io_load_images": [
+          0.0545863420702517
+        ],
+        "embed_dino": [
+          0.11860913713462651
+        ],
+        "embed_clip": [
+          0.004335325909778476
+        ],
+        "mesh_sample": [
+          0.02103466889820993
+        ],
+        "embed_ulip": [
+          0.036357037955895066
+        ],
+        "cache_load": [
+          0.04666818701662123
+        ],
+        "cache_insert": [
+          2.6760157197713852e-05
+        ],
+        "cache_save": [
+          0.16820384212769568
+        ]
+      },
+      "total_s": 10.667654962278903
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000027",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000027/model.ply",
+      "vertices": 3747,
+      "faces": 7490,
+      "diameter": 163.3416664540925,
+      "file_mb": 0.306,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.022305387072265148
+        ],
+        "describe": [
+          10.206019221106544
+        ],
+        "io_load_images": [
+          0.06519013200886548
+        ],
+        "embed_dino": [
+          0.12032039905898273
+        ],
+        "embed_clip": [
+          0.004479235038161278
+        ],
+        "mesh_sample": [
+          0.018791727954521775
+        ],
+        "embed_ulip": [
+          0.03772988589480519
+        ],
+        "cache_load": [
+          0.04808447486720979
+        ],
+        "cache_insert": [
+          2.708006650209427e-05
+        ],
+        "cache_save": [
+          0.17411460587754846
+        ]
+      },
+      "total_s": 10.697062148945406
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000028",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000028/model.ply",
+      "vertices": 13444,
+      "faces": 26884,
+      "diameter": 148.8054439451228,
+      "file_mb": 1.134,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.07912214216776192
+        ],
+        "describe": [
+          10.224900170927867
+        ],
+        "io_load_images": [
+          0.061759933829307556
+        ],
+        "embed_dino": [
+          0.12020148593001068
+        ],
+        "embed_clip": [
+          0.004466855898499489
+        ],
+        "mesh_sample": [
+          0.06367621500976384
+        ],
+        "embed_ulip": [
+          0.03806867799721658
+        ],
+        "cache_load": [
+          0.048135705990716815
+        ],
+        "cache_insert": [
+          2.763001248240471e-05
+        ],
+        "cache_save": [
+          0.17416686611250043
+        ]
+      },
+      "total_s": 10.814525683876127
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000029",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000029/model.ply",
+      "vertices": 2870,
+      "faces": 5736,
+      "diameter": 148.59084734037316,
+      "file_mb": 0.233,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.017769820988178253
+        ],
+        "describe": [
+          10.18811670015566
+        ],
+        "io_load_images": [
+          0.056466422975063324
+        ],
+        "embed_dino": [
+          0.12050615879707038
+        ],
+        "embed_clip": [
+          0.0044776969589293
+        ],
+        "mesh_sample": [
+          0.015108466148376465
+        ],
+        "embed_ulip": [
+          0.037147693103179336
+        ],
+        "cache_load": [
+          0.04765881295315921
+        ],
+        "cache_insert": [
+          2.6889843866229057e-05
+        ],
+        "cache_save": [
+          0.17456119717098773
+        ]
+      },
+      "total_s": 10.66183985909447
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000030",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000030/model.ply",
+      "vertices": 6094,
+      "faces": 12184,
+      "diameter": 123.93691881590834,
+      "file_mb": 0.501,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.03633708809502423
+        ],
+        "describe": [
+          10.203158965101466
+        ],
+        "io_load_images": [
+          0.057596789207309484
+        ],
+        "embed_dino": [
+          0.11968226311728358
+        ],
+        "embed_clip": [
+          0.004471476888284087
+        ],
+        "mesh_sample": [
+          0.029804359888657928
+        ],
+        "embed_ulip": [
+          0.038062557112425566
+        ],
+        "cache_load": [
+          0.048399906838312745
+        ],
+        "cache_insert": [
+          2.8660055249929428e-05
+        ],
+        "cache_save": [
+          0.1747026788070798
+        ]
+      },
+      "total_s": 10.712244745111093
+    },
+    {
+      "dataset": "lmo",
+      "object_id": "obj_000001",
+      "num_views": 16,
+      "mesh": "object_database/lmo/obj_000001/model.ply",
+      "vertices": 5841,
+      "faces": 11678,
+      "diameter": 142.123990183654,
+      "file_mb": 0.602,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.03900230280123651
+        ],
+        "describe": [
+          10.143034843029454
+        ],
+        "io_load_images": [
+          0.05534397601149976
+        ],
+        "embed_dino": [
+          0.1225866109598428
+        ],
+        "embed_clip": [
+          0.004490605089813471
+        ],
+        "mesh_sample": [
+          0.033764862921088934
+        ],
+        "embed_ulip": [
+          0.03743312507867813
+        ],
+        "cache_load": [
+          0.04804787505418062
+        ],
+        "cache_insert": [
+          2.716085873544216e-05
+        ],
+        "cache_save": [
+          0.17482437007129192
+        ]
+      },
+      "total_s": 10.658555731875822
+    },
+    {
+      "dataset": "lmo",
+      "object_id": "obj_000005",
+      "num_views": 16,
+      "mesh": "object_database/lmo/obj_000005/model.ply",
+      "vertices": 22831,
+      "faces": 45666,
+      "diameter": 284.1505285991852,
+      "file_mb": 2.503,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          2.3381708241067827
+        ],
+        "describe": [
+          10.15467795706354
+        ],
+        "io_load_images": [
+          0.049010460963472724
+        ],
+        "embed_dino": [
+          0.11939202412031591
+        ],
+        "embed_clip": [
+          0.004406374879181385
+        ],
+        "mesh_sample": [
+          0.12559623806737363
+        ],
+        "embed_ulip": [
+          0.03676970093511045
+        ],
+        "cache_load": [
+          0.047815043944865465
+        ],
+        "cache_insert": [
+          2.8381124138832092e-05
+        ],
+        "cache_save": [
+          0.17166075203567743
+        ]
+      },
+      "total_s": 13.04752775724046
+    },
+    {
+      "dataset": "lmo",
+      "object_id": "obj_000006",
+      "num_views": 16,
+      "mesh": "object_database/lmo/obj_000006/model.ply",
+      "vertices": 15736,
+      "faces": 31468,
+      "diameter": 185.9480290064717,
+      "file_mb": 1.695,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.10396278509870172
+        ],
+        "describe": [
+          10.205780051182956
+        ],
+        "io_load_images": [
+          0.051876388024538755
+        ],
+        "embed_dino": [
+          0.11598067288286984
+        ],
+        "embed_clip": [
+          0.0042700141202658415
+        ],
+        "mesh_sample": [
+          0.08207697980105877
+        ],
+        "embed_ulip": [
+          0.036678620148450136
+        ],
+        "cache_load": [
+          0.048966720001772046
+        ],
+        "cache_insert": [
+          2.89201270788908e-05
+        ],
+        "cache_save": [
+          0.1689074661117047
+        ]
+      },
+      "total_s": 10.818528617499396
+    },
+    {
+      "dataset": "lmo",
+      "object_id": "obj_000008",
+      "num_views": 16,
+      "mesh": "object_database/lmo/obj_000008/model.ply",
+      "vertices": 12655,
+      "faces": 25306,
+      "diameter": 318.7789155449954,
+      "file_mb": 1.325,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.07809777813963592
+        ],
+        "describe": [
+          10.100256588077173
+        ],
+        "io_load_images": [
+          0.04535399004817009
+        ],
+        "embed_dino": [
+          0.11852265684865415
+        ],
+        "embed_clip": [
+          0.004281495930626988
+        ],
+        "mesh_sample": [
+          0.06642372999340296
+        ],
+        "embed_ulip": [
+          0.03621559706516564
+        ],
+        "cache_load": [
+          0.04647976579144597
+        ],
+        "cache_insert": [
+          2.7979956939816475e-05
+        ],
+        "cache_save": [
+          0.1691782670095563
+        ]
+      },
+      "total_s": 10.66483784886077
+    },
+    {
+      "dataset": "lmo",
+      "object_id": "obj_000009",
+      "num_views": 16,
+      "mesh": "object_database/lmo/obj_000009/model.ply",
+      "vertices": 7912,
+      "faces": 15820,
+      "diameter": 155.69640271370926,
+      "file_mb": 0.828,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.04877444892190397
+        ],
+        "describe": [
+          10.233512873994187
+        ],
+        "io_load_images": [
+          0.05293355300091207
+        ],
+        "embed_dino": [
+          0.11905732215382159
+        ],
+        "embed_clip": [
+          0.004329174989834428
+        ],
+        "mesh_sample": [
+          0.04208753095008433
+        ],
+        "embed_ulip": [
+          0.03676060005091131
+        ],
+        "cache_load": [
+          0.046727816108614206
+        ],
+        "cache_insert": [
+          2.970104105770588e-05
+        ],
+        "cache_save": [
+          0.16866704495623708
+        ]
+      },
+      "total_s": 10.752880066167563
+    },
+    {
+      "dataset": "lmo",
+      "object_id": "obj_000010",
+      "num_views": 16,
+      "mesh": "object_database/lmo/obj_000010/model.ply",
+      "vertices": 18473,
+      "faces": 36942,
+      "diameter": 197.0148243242359,
+      "file_mb": 2.008,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          1.7971475690137595
+        ],
+        "describe": [
+          10.234722721856087
+        ],
+        "io_load_images": [
+          0.06168113090097904
+        ],
+        "embed_dino": [
+          0.11894976091571152
+        ],
+        "embed_clip": [
+          0.004469344858080149
+        ],
+        "mesh_sample": [
+          0.10169133194722235
+        ],
+        "embed_ulip": [
+          0.03763964702375233
+        ],
+        "cache_load": [
+          0.04814844415523112
+        ],
+        "cache_insert": [
+          3.1400006264448166e-05
+        ],
+        "cache_save": [
+          0.17411310598254204
+        ]
+      },
+      "total_s": 12.57859445665963
+    },
+    {
+      "dataset": "lmo",
+      "object_id": "obj_000011",
+      "num_views": 16,
+      "mesh": "object_database/lmo/obj_000011/model.ply",
+      "vertices": 7479,
+      "faces": 14954,
+      "diameter": 193.0721420201182,
+      "file_mb": 0.792,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.04847125615924597
+        ],
+        "describe": [
+          10.176345164887607
+        ],
+        "io_load_images": [
+          0.05263614095747471
+        ],
+        "embed_dino": [
+          0.11889168084599078
+        ],
+        "embed_clip": [
+          0.004386055050417781
+        ],
+        "mesh_sample": [
+          0.04082084400579333
+        ],
+        "embed_ulip": [
+          0.039584266021847725
+        ],
+        "cache_load": [
+          0.047144189942628145
+        ],
+        "cache_insert": [
+          2.868007868528366e-05
+        ],
+        "cache_save": [
+          0.16958131012506783
+        ]
+      },
+      "total_s": 10.697889588074759
+    },
+    {
+      "dataset": "lmo",
+      "object_id": "obj_000012",
+      "num_views": 16,
+      "mesh": "object_database/lmo/obj_000012/model.ply",
+      "vertices": 15970,
+      "faces": 31952,
+      "diameter": 173.76590154057968,
+      "file_mb": 1.678,
+      "reused_images": 16,
+      "reused_cams": 16,
+      "reused_clouds": 16,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 16,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.09143950301222503
+        ],
+        "describe": [
+          10.191654393216595
+        ],
+        "io_load_images": [
+          0.06427914695814252
+        ],
+        "embed_dino": [
+          0.11911034188233316
+        ],
+        "embed_clip": [
+          0.004369514994323254
+        ],
+        "mesh_sample": [
+          0.08541663899086416
+        ],
+        "embed_ulip": [
+          0.0361908869817853
+        ],
+        "cache_load": [
+          0.04676538612693548
+        ],
+        "cache_insert": [
+          2.9310118407011032e-05
+        ],
+        "cache_save": [
+          0.16952955001033843
+        ]
+      },
+      "total_s": 10.80878467229195
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000001",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000001/textured_simple.obj",
+      "vertices": 9951,
+      "faces": 15728,
+      "diameter": 0.2014908513382183,
+      "file_mb": 1.611,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.32873598020523787
+        ],
+        "describe": [
+          11.640340814832598
+        ],
+        "io_load_images": [
+          0.17778937588445842
+        ],
+        "embed_dino": [
+          0.28235909389331937
+        ],
+        "embed_clip": [
+          0.004386807093396783
+        ],
+        "mesh_sample": [
+          0.47015907778404653
+        ],
+        "embed_ulip": [
+          0.03666360001079738
+        ],
+        "cache_load": [
+          0.06425643712282181
+        ],
+        "cache_insert": [
+          0.0037453030236065388
+        ],
+        "cache_save": [
+          0.1701770918443799
+        ]
+      },
+      "total_s": 13.178613581694663
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000002",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000002/textured_simple.obj",
+      "vertices": 8291,
+      "faces": 15728,
+      "diameter": 0.27858633957536394,
+      "file_mb": 1.593,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.323357367888093
+        ],
+        "describe": [
+          11.810023471014574
+        ],
+        "io_load_images": [
+          0.1824795249849558
+        ],
+        "embed_dino": [
+          0.288546189898625
+        ],
+        "embed_clip": [
+          0.004385214066132903
+        ],
+        "mesh_sample": [
+          0.49223991506733
+        ],
+        "embed_ulip": [
+          0.037537486059591174
+        ],
+        "cache_load": [
+          0.06792303896509111
+        ],
+        "cache_insert": [
+          0.00011094007641077042
+        ],
+        "cache_save": [
+          0.17301539005711675
+        ]
+      },
+      "total_s": 13.37961853807792
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000003",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000003/textured_simple.obj",
+      "vertices": 8300,
+      "faces": 15728,
+      "diameter": 0.20562323425381676,
+      "file_mb": 1.594,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.34371845703572035
+        ],
+        "describe": [
+          11.710131871048361
+        ],
+        "io_load_images": [
+          0.15115151484496891
+        ],
+        "embed_dino": [
+          0.2898074770346284
+        ],
+        "embed_clip": [
+          0.004456334980204701
+        ],
+        "mesh_sample": [
+          0.5041387041565031
+        ],
+        "embed_ulip": [
+          0.03726072399877012
+        ],
+        "cache_load": [
+          0.06522979214787483
+        ],
+        "cache_insert": [
+          0.0001015800517052412
+        ],
+        "cache_save": [
+          0.17264680797234178
+        ]
+      },
+      "total_s": 13.278643263271078
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000004",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000004/textured_simple.obj",
+      "vertices": 8404,
+      "faces": 15728,
+      "diameter": 0.14002063128339337,
+      "file_mb": 1.595,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.333860149839893
+        ],
+        "describe": [
+          11.706394440028816
+        ],
+        "io_load_images": [
+          0.17697783187031746
+        ],
+        "embed_dino": [
+          0.278327742125839
+        ],
+        "embed_clip": [
+          0.004283366026356816
+        ],
+        "mesh_sample": [
+          0.4779913038946688
+        ],
+        "embed_ulip": [
+          0.03628977690823376
+        ],
+        "cache_load": [
+          0.06321471184492111
+        ],
+        "cache_insert": [
+          0.00027590198442339897
+        ],
+        "cache_save": [
+          0.16828358196653426
+        ]
+      },
+      "total_s": 13.245898806490004
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000005",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000005/textured_simple.obj",
+      "vertices": 10983,
+      "faces": 15728,
+      "diameter": 0.22475193086156126,
+      "file_mb": 1.652,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.3183033720124513
+        ],
+        "describe": [
+          11.835462536895648
+        ],
+        "io_load_images": [
+          0.12779716099612415
+        ],
+        "embed_dino": [
+          0.2890096730552614
+        ],
+        "embed_clip": [
+          0.004318934865295887
+        ],
+        "mesh_sample": [
+          0.4910323480144143
+        ],
+        "embed_ulip": [
+          0.03648899891413748
+        ],
+        "cache_load": [
+          0.062009664019569755
+        ],
+        "cache_insert": [
+          8.401088416576385e-05
+        ],
+        "cache_save": [
+          0.16924613784067333
+        ]
+      },
+      "total_s": 13.333752837497741
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000006",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000006/textured_simple.obj",
+      "vertices": 8227,
+      "faces": 15728,
+      "diameter": 0.12555757331598918,
+      "file_mb": 1.593,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.31155314203351736
+        ],
+        "describe": [
+          11.746846789028496
+        ],
+        "io_load_images": [
+          0.14867048105224967
+        ],
+        "embed_dino": [
+          0.2937579290010035
+        ],
+        "embed_clip": [
+          0.004394453950226307
+        ],
+        "mesh_sample": [
+          0.49905190407298505
+        ],
+        "embed_ulip": [
+          0.03706641192547977
+        ],
+        "cache_load": [
+          0.06249583791941404
+        ],
+        "cache_insert": [
+          0.0001038599293678999
+        ],
+        "cache_save": [
+          0.17022552411071956
+        ]
+      },
+      "total_s": 13.274166333023459
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000007",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000007/textured_simple.obj",
+      "vertices": 8331,
+      "faces": 15728,
+      "diameter": 0.19260531241115858,
+      "file_mb": 1.596,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.3440225590020418
+        ],
+        "describe": [
+          11.73603075905703
+        ],
+        "io_load_images": [
+          0.13495667115785182
+        ],
+        "embed_dino": [
+          0.29050371213816106
+        ],
+        "embed_clip": [
+          0.004389024106785655
+        ],
+        "mesh_sample": [
+          0.5073551831301302
+        ],
+        "embed_ulip": [
+          0.03656388004310429
+        ],
+        "cache_load": [
+          0.06271743797697127
+        ],
+        "cache_insert": [
+          0.00035469187423586845
+        ],
+        "cache_save": [
+          0.1755437650717795
+        ]
+      },
+      "total_s": 13.292437683558092
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000008",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000008/textured_simple.obj",
+      "vertices": 8268,
+      "faces": 15728,
+      "diameter": 0.1382554169137687,
+      "file_mb": 1.593,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.2944071348756552
+        ],
+        "describe": [
+          11.796529818093404
+        ],
+        "io_load_images": [
+          0.17031294386833906
+        ],
+        "embed_dino": [
+          0.2900429889559746
+        ],
+        "embed_clip": [
+          0.004369304981082678
+        ],
+        "mesh_sample": [
+          0.48177116620354354
+        ],
+        "embed_ulip": [
+          0.036677380092442036
+        ],
+        "cache_load": [
+          0.06181669398210943
+        ],
+        "cache_insert": [
+          9.082001633942127e-05
+        ],
+        "cache_save": [
+          0.17184906196780503
+        ]
+      },
+      "total_s": 13.307867313036695
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000009",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000009/textured_simple.obj",
+      "vertices": 8342,
+      "faces": 15728,
+      "diameter": 0.14513097044394074,
+      "file_mb": 1.595,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.33818258508108556
+        ],
+        "describe": [
+          11.756164736812934
+        ],
+        "io_load_images": [
+          0.193420427152887
+        ],
+        "embed_dino": [
+          0.28217306383885443
+        ],
+        "embed_clip": [
+          0.004428476095199585
+        ],
+        "mesh_sample": [
+          0.5091165518388152
+        ],
+        "embed_ulip": [
+          0.03648624895140529
+        ],
+        "cache_load": [
+          0.06242945697158575
+        ],
+        "cache_insert": [
+          9.936001151800156e-05
+        ],
+        "cache_save": [
+          0.17113507888279855
+        ]
+      },
+      "total_s": 13.353635985637084
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000010",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000010/textured_simple.obj",
+      "vertices": 10710,
+      "faces": 15728,
+      "diameter": 0.21220759054048938,
+      "file_mb": 1.649,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.27475224202498794
+        ],
+        "describe": [
+          11.622251942986622
+        ],
+        "io_load_images": [
+          0.10413311491720378
+        ],
+        "embed_dino": [
+          0.2931684269569814
+        ],
+        "embed_clip": [
+          0.004365494940429926
+        ],
+        "mesh_sample": [
+          0.40888369898311794
+        ],
+        "embed_ulip": [
+          0.0364897889085114
+        ],
+        "cache_load": [
+          0.06348012294620275
+        ],
+        "cache_insert": [
+          0.00010391091927886009
+        ],
+        "cache_save": [
+          0.16988244210369885
+        ]
+      },
+      "total_s": 12.977511185687035
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000011",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000011/textured_simple.obj",
+      "vertices": 11912,
+      "faces": 15728,
+      "diameter": 0.31942501306253396,
+      "file_mb": 1.677,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.2948061670176685
+        ],
+        "describe": [
+          11.843932477058843
+        ],
+        "io_load_images": [
+          0.1358882279600948
+        ],
+        "embed_dino": [
+          0.29108445392921567
+        ],
+        "embed_clip": [
+          0.004416566109284759
+        ],
+        "mesh_sample": [
+          0.46558085293509066
+        ],
+        "embed_ulip": [
+          0.0366556600201875
+        ],
+        "cache_load": [
+          0.06283824890851974
+        ],
+        "cache_insert": [
+          0.0004403230268508196
+        ],
+        "cache_save": [
+          0.17616878799162805
+        ]
+      },
+      "total_s": 13.311811764957383
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000012",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000012/textured_simple.obj",
+      "vertices": 8251,
+      "faces": 15728,
+      "diameter": 0.27909194431226425,
+      "file_mb": 1.591,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.3137059349101037
+        ],
+        "describe": [
+          11.708821007981896
+        ],
+        "io_load_images": [
+          0.12804246181622148
+        ],
+        "embed_dino": [
+          0.293828611029312
+        ],
+        "embed_clip": [
+          0.0044676149263978004
+        ],
+        "mesh_sample": [
+          0.47952568298205733
+        ],
+        "embed_ulip": [
+          0.03714640182442963
+        ],
+        "cache_load": [
+          0.1932621558662504
+        ],
+        "cache_insert": [
+          0.0001473710872232914
+        ],
+        "cache_save": [
+          0.17211860488168895
+        ]
+      },
+      "total_s": 13.331065847305581
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000013",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000013/textured_simple.obj",
+      "vertices": 8323,
+      "faces": 15728,
+      "diameter": 0.23461301073256785,
+      "file_mb": 1.594,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.2681055339053273
+        ],
+        "describe": [
+          11.713883104966953
+        ],
+        "io_load_images": [
+          0.12000914104282856
+        ],
+        "embed_dino": [
+          0.294281586073339
+        ],
+        "embed_clip": [
+          0.0044046591501683
+        ],
+        "mesh_sample": [
+          0.4121848829090595
+        ],
+        "embed_ulip": [
+          0.03721267101354897
+        ],
+        "cache_load": [
+          0.06343390792608261
+        ],
+        "cache_insert": [
+          9.417999535799026e-05
+        ],
+        "cache_save": [
+          0.17396383499726653
+        ]
+      },
+      "total_s": 13.087573501979932
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000014",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000014/textured_simple.obj",
+      "vertices": 16762,
+      "faces": 15728,
+      "diameter": 0.17019799128368115,
+      "file_mb": 1.795,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.3271452181506902
+        ],
+        "describe": [
+          11.672762282192707
+        ],
+        "io_load_images": [
+          0.14994182903319597
+        ],
+        "embed_dino": [
+          0.2859860840253532
+        ],
+        "embed_clip": [
+          0.004321279935538769
+        ],
+        "mesh_sample": [
+          0.4478720538318157
+        ],
+        "embed_ulip": [
+          0.03656358504667878
+        ],
+        "cache_load": [
+          0.0607665388379246
+        ],
+        "cache_insert": [
+          8.728099055588245e-05
+        ],
+        "cache_save": [
+          0.1713038319721818
+        ]
+      },
+      "total_s": 13.156749984016642
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000015",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000015/textured_simple.obj",
+      "vertices": 9174,
+      "faces": 15728,
+      "diameter": 0.2690009087828515,
+      "file_mb": 1.612,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.3110030230600387
+        ],
+        "describe": [
+          11.719099476002157
+        ],
+        "io_load_images": [
+          0.1325613409280777
+        ],
+        "embed_dino": [
+          0.29372928896918893
+        ],
+        "embed_clip": [
+          0.004328228998929262
+        ],
+        "mesh_sample": [
+          0.4609907229896635
+        ],
+        "embed_ulip": [
+          0.03750437102280557
+        ],
+        "cache_load": [
+          0.06483903503976762
+        ],
+        "cache_insert": [
+          8.602091111242771e-05
+        ],
+        "cache_save": [
+          0.17168236104771495
+        ]
+      },
+      "total_s": 13.195823868969455
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000016",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000016/textured_simple.obj",
+      "vertices": 8920,
+      "faces": 15728,
+      "diameter": 0.2528222747030016,
+      "file_mb": 1.608,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.34157943981699646
+        ],
+        "describe": [
+          11.734631003811955
+        ],
+        "io_load_images": [
+          0.16300687100738287
+        ],
+        "embed_dino": [
+          0.2874577799811959
+        ],
+        "embed_clip": [
+          0.004386760061606765
+        ],
+        "mesh_sample": [
+          0.48554730601608753
+        ],
+        "embed_ulip": [
+          0.03704677801579237
+        ],
+        "cache_load": [
+          0.06250363681465387
+        ],
+        "cache_insert": [
+          9.409082122147083e-05
+        ],
+        "cache_save": [
+          0.17042908910661936
+        ]
+      },
+      "total_s": 13.286682755453512
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000017",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000017/textured_simple.obj",
+      "vertices": 8628,
+      "faces": 15728,
+      "diameter": 0.2238265913424944,
+      "file_mb": 1.601,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.28185234498232603
+        ],
+        "describe": [
+          11.652471476001665
+        ],
+        "io_load_images": [
+          0.10700778290629387
+        ],
+        "embed_dino": [
+          0.2948031148407608
+        ],
+        "embed_clip": [
+          0.004362829960882664
+        ],
+        "mesh_sample": [
+          0.41764586395584047
+        ],
+        "embed_ulip": [
+          0.03897456987760961
+        ],
+        "cache_load": [
+          0.06252537691034377
+        ],
+        "cache_insert": [
+          8.60709697008133e-05
+        ],
+        "cache_save": [
+          0.17147614294663072
+        ]
+      },
+      "total_s": 13.031205573352054
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000018",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000018/textured_simple.obj",
+      "vertices": 13952,
+      "faces": 15728,
+      "diameter": 0.12410678738489689,
+      "file_mb": 1.726,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.25801407895050943
+        ],
+        "describe": [
+          11.745324036106467
+        ],
+        "io_load_images": [
+          0.13314311299473047
+        ],
+        "embed_dino": [
+          0.2931805800180882
+        ],
+        "embed_clip": [
+          0.004406768828630447
+        ],
+        "mesh_sample": [
+          0.389788871165365
+        ],
+        "embed_ulip": [
+          0.037388338008895516
+        ],
+        "cache_load": [
+          0.06465375004336238
+        ],
+        "cache_insert": [
+          9.841099381446838e-05
+        ],
+        "cache_save": [
+          0.17382961488328874
+        ]
+      },
+      "total_s": 13.099827561993152
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000019",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000019/textured_simple.obj",
+      "vertices": 9825,
+      "faces": 15728,
+      "diameter": 0.21274002378490042,
+      "file_mb": 1.625,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.3073582218494266
+        ],
+        "describe": [
+          11.679733549943194
+        ],
+        "io_load_images": [
+          0.11194689315743744
+        ],
+        "embed_dino": [
+          0.29932025307789445
+        ],
+        "embed_clip": [
+          0.004453809931874275
+        ],
+        "mesh_sample": [
+          0.43750408897176385
+        ],
+        "embed_ulip": [
+          0.03731801616959274
+        ],
+        "cache_load": [
+          0.06362812197767198
+        ],
+        "cache_insert": [
+          9.55299474298954e-05
+        ],
+        "cache_save": [
+          0.17231835215352476
+        ]
+      },
+      "total_s": 13.11367683717981
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000020",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000020/textured_simple.obj",
+      "vertices": 10064,
+      "faces": 15728,
+      "diameter": 0.2689762787198901,
+      "file_mb": 1.631,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.3194180859718472
+        ],
+        "describe": [
+          11.662858984898776
+        ],
+        "io_load_images": [
+          0.10052448487840593
+        ],
+        "embed_dino": [
+          0.2911379940342158
+        ],
+        "embed_clip": [
+          0.004295838996767998
+        ],
+        "mesh_sample": [
+          0.4407633119262755
+        ],
+        "embed_ulip": [
+          0.036236208863556385
+        ],
+        "cache_load": [
+          0.06180725898593664
+        ],
+        "cache_insert": [
+          0.00030778185464441776
+        ],
+        "cache_save": [
+          0.16854369384236634
+        ]
+      },
+      "total_s": 13.085893644252792
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000021",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000021/textured_simple.obj",
+      "vertices": 8455,
+      "faces": 15728,
+      "diameter": 0.10697510469730795,
+      "file_mb": 1.596,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.2986361728981137
+        ],
+        "describe": [
+          11.825430972967297
+        ],
+        "io_load_images": [
+          0.1565520209260285
+        ],
+        "embed_dino": [
+          0.29828150593675673
+        ],
+        "embed_clip": [
+          0.00447417888790369
+        ],
+        "mesh_sample": [
+          0.4461767009925097
+        ],
+        "embed_ulip": [
+          0.03741654590703547
+        ],
+        "cache_load": [
+          0.06326926685869694
+        ],
+        "cache_insert": [
+          0.00010187109000980854
+        ],
+        "cache_save": [
+          0.1780106828082353
+        ]
+      },
+      "total_s": 13.308349919272587
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000001",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000001/model.ply",
+      "vertices": 42134,
+      "faces": 84260,
+      "diameter": 78.70364819771389,
+      "file_mb": 3.642,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.29956895508803427
+        ],
+        "describe": [
+          11.72394846798852
+        ],
+        "io_load_images": [
+          0.13366805808618665
+        ],
+        "embed_dino": [
+          0.2906714309938252
+        ],
+        "embed_clip": [
+          0.0043403280433267355
+        ],
+        "mesh_sample": [
+          0.19057326298207045
+        ],
+        "embed_ulip": [
+          0.03635494806803763
+        ],
+        "cache_load": [
+          0.04725813097320497
+        ],
+        "cache_insert": [
+          8.564000017940998e-05
+        ],
+        "cache_save": [
+          0.16996722808107734
+        ]
+      },
+      "total_s": 12.896436450304464
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000002",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000002/model.ply",
+      "vertices": 41063,
+      "faces": 82114,
+      "diameter": 86.92031243096164,
+      "file_mb": 3.564,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.2832881810609251
+        ],
+        "describe": [
+          11.775589574826881
+        ],
+        "io_load_images": [
+          0.14796889014542103
+        ],
+        "embed_dino": [
+          0.3018012389075011
+        ],
+        "embed_clip": [
+          0.0045052701607346535
+        ],
+        "mesh_sample": [
+          0.1957128830254078
+        ],
+        "embed_ulip": [
+          0.03640093794092536
+        ],
+        "cache_load": [
+          0.046825545839965343
+        ],
+        "cache_insert": [
+          8.071004413068295e-05
+        ],
+        "cache_save": [
+          0.16977697191759944
+        ]
+      },
+      "total_s": 12.961950203869492
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000003",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000003/model.ply",
+      "vertices": 47498,
+      "faces": 94992,
+      "diameter": 91.46397836555393,
+      "file_mb": 4.14,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.32220246200449765
+        ],
+        "describe": [
+          11.750943304039538
+        ],
+        "io_load_images": [
+          0.13829739391803741
+        ],
+        "embed_dino": [
+          0.28940904093906283
+        ],
+        "embed_clip": [
+          0.004296818980947137
+        ],
+        "mesh_sample": [
+          0.21455325279384851
+        ],
+        "embed_ulip": [
+          0.036371357971802354
+        ],
+        "cache_load": [
+          0.047105407109484076
+        ],
+        "cache_insert": [
+          9.880098514258862e-05
+        ],
+        "cache_save": [
+          0.16883656405843794
+        ]
+      },
+      "total_s": 12.972114402800798
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000004",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000004/model.ply",
+      "vertices": 3689,
+      "faces": 7374,
+      "diameter": 96.3457964262254,
+      "file_mb": 0.303,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.021512210834771395
+        ],
+        "describe": [
+          11.882404556963593
+        ],
+        "io_load_images": [
+          0.13617204711772501
+        ],
+        "embed_dino": [
+          0.2996405151207
+        ],
+        "embed_clip": [
+          0.004583440022543073
+        ],
+        "mesh_sample": [
+          0.020739825908094645
+        ],
+        "embed_ulip": [
+          0.03759153396822512
+        ],
+        "cache_load": [
+          0.04915649094618857
+        ],
+        "cache_insert": [
+          9.132991544902325e-05
+        ],
+        "cache_save": [
+          0.17435199697501957
+        ]
+      },
+      "total_s": 12.62624394777231
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000005",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000005/model.ply",
+      "vertices": 12806,
+      "faces": 25614,
+      "diameter": 123.96874606125529,
+      "file_mb": 1.076,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.07047343906015158
+        ],
+        "describe": [
+          11.75934503809549
+        ],
+        "io_load_images": [
+          0.13803934818133712
+        ],
+        "embed_dino": [
+          0.29184337914921343
+        ],
+        "embed_clip": [
+          0.004603429930284619
+        ],
+        "mesh_sample": [
+          0.059028584975749254
+        ],
+        "embed_ulip": [
+          0.03672610898502171
+        ],
+        "cache_load": [
+          0.04768865997903049
+        ],
+        "cache_insert": [
+          0.0001122811809182167
+        ],
+        "cache_save": [
+          0.17287840391509235
+        ]
+      },
+      "total_s": 12.580738673452288
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000006",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000006/model.ply",
+      "vertices": 2840,
+      "faces": 5700,
+      "diameter": 116.50154622504867,
+      "file_mb": 0.23,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.01734800194390118
+        ],
+        "describe": [
+          11.714801301946864
+        ],
+        "io_load_images": [
+          0.14053362212143838
+        ],
+        "embed_dino": [
+          0.28581600496545434
+        ],
+        "embed_clip": [
+          0.00438047805801034
+        ],
+        "mesh_sample": [
+          0.01482189609669149
+        ],
+        "embed_ulip": [
+          0.037153152050450444
+        ],
+        "cache_load": [
+          0.05661768699064851
+        ],
+        "cache_insert": [
+          9.972113184630871e-05
+        ],
+        "cache_save": [
+          0.17617232399061322
+        ]
+      },
+      "total_s": 12.447744189295918
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000007",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000007/model.ply",
+      "vertices": 8517,
+      "faces": 17106,
+      "diameter": 185.13403326462466,
+      "file_mb": 0.704,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.05401803902350366
+        ],
+        "describe": [
+          11.907181022921577
+        ],
+        "io_load_images": [
+          0.14512837887741625
+        ],
+        "embed_dino": [
+          0.291773890145123
+        ],
+        "embed_clip": [
+          0.004429028136655688
+        ],
+        "mesh_sample": [
+          0.03845972800627351
+        ],
+        "embed_ulip": [
+          0.036302476190030575
+        ],
+        "cache_load": [
+          0.048160911072045565
+        ],
+        "cache_insert": [
+          0.00010033091530203819
+        ],
+        "cache_save": [
+          0.17230889503844082
+        ]
+      },
+      "total_s": 12.697862700326368
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000008",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000008/model.ply",
+      "vertices": 11368,
+      "faces": 22812,
+      "diameter": 222.08631604336702,
+      "file_mb": 0.949,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.07665278599597514
+        ],
+        "describe": [
+          11.828286944888532
+        ],
+        "io_load_images": [
+          0.14037466910667717
+        ],
+        "embed_dino": [
+          0.29130480205640197
+        ],
+        "embed_clip": [
+          0.004402377875521779
+        ],
+        "mesh_sample": [
+          0.051437772111967206
+        ],
+        "embed_ulip": [
+          0.036941939033567905
+        ],
+        "cache_load": [
+          0.048508484149351716
+        ],
+        "cache_insert": [
+          0.0003768021706491709
+        ],
+        "cache_save": [
+          0.1738862639758736
+        ]
+      },
+      "total_s": 12.652172841364518
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000009",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000009/model.ply",
+      "vertices": 7046,
+      "faces": 14120,
+      "diameter": 157.46381151691241,
+      "file_mb": 0.576,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.043145628878846765
+        ],
+        "describe": [
+          11.736591322813183
+        ],
+        "io_load_images": [
+          0.1490194909274578
+        ],
+        "embed_dino": [
+          0.2850468789692968
+        ],
+        "embed_clip": [
+          0.00432990794070065
+        ],
+        "mesh_sample": [
+          0.031416712095960975
+        ],
+        "embed_ulip": [
+          0.03580465097911656
+        ],
+        "cache_load": [
+          0.04755664803087711
+        ],
+        "cache_insert": [
+          8.860998786985874e-05
+        ],
+        "cache_save": [
+          0.16923527186736465
+        ]
+      },
+      "total_s": 12.502235122490674
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000010",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000010/model.ply",
+      "vertices": 9193,
+      "faces": 18434,
+      "diameter": 110.9197371288087,
+      "file_mb": 0.754,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.05969435512088239
+        ],
+        "describe": [
+          11.73124378011562
+        ],
+        "io_load_images": [
+          0.14236112590879202
+        ],
+        "embed_dino": [
+          0.2921759709715843
+        ],
+        "embed_clip": [
+          0.004466037964448333
+        ],
+        "mesh_sample": [
+          0.04189583822153509
+        ],
+        "embed_ulip": [
+          0.0373063690494746
+        ],
+        "cache_load": [
+          0.048575823893770576
+        ],
+        "cache_insert": [
+          0.000333291944116354
+        ],
+        "cache_save": [
+          0.1716554940212518
+        ]
+      },
+      "total_s": 12.529708087211475
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000011",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000011/model.ply",
+      "vertices": 21284,
+      "faces": 42622,
+      "diameter": 98.89339494974425,
+      "file_mb": 1.823,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.14747457904741168
+        ],
+        "describe": [
+          11.904458009870723
+        ],
+        "io_load_images": [
+          0.1396497068926692
+        ],
+        "embed_dino": [
+          0.29535676585510373
+        ],
+        "embed_clip": [
+          0.004441139055415988
+        ],
+        "mesh_sample": [
+          0.09765821695327759
+        ],
+        "embed_ulip": [
+          0.03738469909876585
+        ],
+        "cache_load": [
+          0.05012062191963196
+        ],
+        "cache_insert": [
+          9.139114990830421e-05
+        ],
+        "cache_save": [
+          0.17362145381048322
+        ]
+      },
+      "total_s": 12.85025658365339
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000012",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000012/model.ply",
+      "vertices": 22069,
+      "faces": 44154,
+      "diameter": 112.51758825903434,
+      "file_mb": 1.897,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.15570970112457871
+        ],
+        "describe": [
+          11.763524928828701
+        ],
+        "io_load_images": [
+          0.13512257602997124
+        ],
+        "embed_dino": [
+          0.2989661558531225
+        ],
+        "embed_clip": [
+          0.004519508918747306
+        ],
+        "mesh_sample": [
+          0.10293056885711849
+        ],
+        "embed_ulip": [
+          0.03755803010426462
+        ],
+        "cache_load": [
+          0.048410520888864994
+        ],
+        "cache_insert": [
+          9.76810697466135e-05
+        ],
+        "cache_save": [
+          0.17453398904763162
+        ]
+      },
+      "total_s": 12.721373660722747
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000013",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000013/model.ply",
+      "vertices": 6385,
+      "faces": 12774,
+      "diameter": 72.9014707061556,
+      "file_mb": 0.519,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.038700965931639075
+        ],
+        "describe": [
+          11.738159105880186
+        ],
+        "io_load_images": [
+          0.14390185987576842
+        ],
+        "embed_dino": [
+          0.29377755895256996
+        ],
+        "embed_clip": [
+          0.004405238898470998
+        ],
+        "mesh_sample": [
+          0.03011110285297036
+        ],
+        "embed_ulip": [
+          0.038053852040320635
+        ],
+        "cache_load": [
+          0.04856874095275998
+        ],
+        "cache_insert": [
+          0.00010366085916757584
+        ],
+        "cache_save": [
+          0.17219889094121754
+        ]
+      },
+      "total_s": 12.50798097718507
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000014",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000014/model.ply",
+      "vertices": 6896,
+      "faces": 13788,
+      "diameter": 90.18722701624299,
+      "file_mb": 0.563,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.039213969837874174
+        ],
+        "describe": [
+          11.735597601858899
+        ],
+        "io_load_images": [
+          0.1259488849900663
+        ],
+        "embed_dino": [
+          0.2910114380065352
+        ],
+        "embed_clip": [
+          0.004296458093449473
+        ],
+        "mesh_sample": [
+          0.031015946995466948
+        ],
+        "embed_ulip": [
+          0.03596359118819237
+        ],
+        "cache_load": [
+          0.04732788191176951
+        ],
+        "cache_insert": [
+          9.419000707566738e-05
+        ],
+        "cache_save": [
+          0.16917581018060446
+        ]
+      },
+      "total_s": 12.479645773069933
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000015",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000015/model.ply",
+      "vertices": 6817,
+      "faces": 13654,
+      "diameter": 83.63351789381497,
+      "file_mb": 0.557,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.03798476210795343
+        ],
+        "describe": [
+          11.763032071990892
+        ],
+        "io_load_images": [
+          0.13805165002122521
+        ],
+        "embed_dino": [
+          0.29017489799298346
+        ],
+        "embed_clip": [
+          0.004312908044084907
+        ],
+        "mesh_sample": [
+          0.030757105210796
+        ],
+        "embed_ulip": [
+          0.03587119816802442
+        ],
+        "cache_load": [
+          0.04703424102626741
+        ],
+        "cache_insert": [
+          0.00010050996206700802
+        ],
+        "cache_save": [
+          0.16909009590744972
+        ]
+      },
+      "total_s": 12.516409440431744
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000016",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000016/model.ply",
+      "vertices": 9363,
+      "faces": 18738,
+      "diameter": 91.20060973107691,
+      "file_mb": 0.765,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.054388148011639714
+        ],
+        "describe": [
+          11.592312484048307
+        ],
+        "io_load_images": [
+          0.13932456611655653
+        ],
+        "embed_dino": [
+          0.2964999950490892
+        ],
+        "embed_clip": [
+          0.004413086920976639
+        ],
+        "mesh_sample": [
+          0.0421074191108346
+        ],
+        "embed_ulip": [
+          0.036530161974951625
+        ],
+        "cache_load": [
+          0.04706841800361872
+        ],
+        "cache_insert": [
+          0.0003552618436515331
+        ],
+        "cache_save": [
+          0.17005176097154617
+        ]
+      },
+      "total_s": 12.383051302051172
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000017",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000017/model.ply",
+      "vertices": 12932,
+      "faces": 25868,
+      "diameter": 163.82977483926618,
+      "file_mb": 1.086,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.07381821004673839
+        ],
+        "describe": [
+          11.74272055993788
+        ],
+        "io_load_images": [
+          0.12775615113787353
+        ],
+        "embed_dino": [
+          0.29392029508017004
+        ],
+        "embed_clip": [
+          0.004390458110719919
+        ],
+        "mesh_sample": [
+          0.058007948799058795
+        ],
+        "embed_ulip": [
+          0.036274719052016735
+        ],
+        "cache_load": [
+          0.04817695589736104
+        ],
+        "cache_insert": [
+          9.833998046815395e-05
+        ],
+        "cache_save": [
+          0.16977351810783148
+        ]
+      },
+      "total_s": 12.554937156150118
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000018",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000018/model.ply",
+      "vertices": 18095,
+      "faces": 36210,
+      "diameter": 153.5001112763378,
+      "file_mb": 1.548,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.10176338697783649
+        ],
+        "describe": [
+          11.7650743490085
+        ],
+        "io_load_images": [
+          0.13772588199935853
+        ],
+        "embed_dino": [
+          0.29955211794003844
+        ],
+        "embed_clip": [
+          0.0045220989268273115
+        ],
+        "mesh_sample": [
+          0.08585319411940873
+        ],
+        "embed_ulip": [
+          0.03812334197573364
+        ],
+        "cache_load": [
+          0.04934004205279052
+        ],
+        "cache_insert": [
+          0.0004945429973304272
+        ],
+        "cache_save": [
+          0.18050279305316508
+        ]
+      },
+      "total_s": 12.66295174905099
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000019",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000019/model.ply",
+      "vertices": 2348,
+      "faces": 4692,
+      "diameter": 111.13730246861311,
+      "file_mb": 0.188,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.014802094083279371
+        ],
+        "describe": [
+          11.704599651973695
+        ],
+        "io_load_images": [
+          0.13300536200404167
+        ],
+        "embed_dino": [
+          0.28818422299809754
+        ],
+        "embed_clip": [
+          0.004309165989980102
+        ],
+        "mesh_sample": [
+          0.012229257030412555
+        ],
+        "embed_ulip": [
+          0.03592873900197446
+        ],
+        "cache_load": [
+          0.047383549856022
+        ],
+        "cache_insert": [
+          0.0003049420192837715
+        ],
+        "cache_save": [
+          0.16885196790099144
+        ]
+      },
+      "total_s": 12.409598952857777
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000020",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000020/model.ply",
+      "vertices": 2348,
+      "faces": 4692,
+      "diameter": 121.64805793764239,
+      "file_mb": 0.188,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.014301961986348033
+        ],
+        "describe": [
+          11.88956460612826
+        ],
+        "io_load_images": [
+          0.13780154893174767
+        ],
+        "embed_dino": [
+          0.2882920119445771
+        ],
+        "embed_clip": [
+          0.004350815899670124
+        ],
+        "mesh_sample": [
+          0.0122156769502908
+        ],
+        "embed_ulip": [
+          0.035817275987938046
+        ],
+        "cache_load": [
+          0.04711408703587949
+        ],
+        "cache_insert": [
+          0.0003188219852745533
+        ],
+        "cache_save": [
+          0.17109270091168582
+        ]
+      },
+      "total_s": 12.600869507761672
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000021",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000021/model.ply",
+      "vertices": 10248,
+      "faces": 20508,
+      "diameter": 118.32230032977498,
+      "file_mb": 0.844,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.05610133404843509
+        ],
+        "describe": [
+          11.874847873812541
+        ],
+        "io_load_images": [
+          0.13989462191239
+        ],
+        "embed_dino": [
+          0.2921401208732277
+        ],
+        "embed_clip": [
+          0.004406627966091037
+        ],
+        "mesh_sample": [
+          0.04605781100690365
+        ],
+        "embed_ulip": [
+          0.03700022306293249
+        ],
+        "cache_load": [
+          0.048088313080370426
+        ],
+        "cache_insert": [
+          0.00041128299199044704
+        ],
+        "cache_save": [
+          0.1731404811143875
+        ]
+      },
+      "total_s": 12.67208868986927
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000022",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000022/model.ply",
+      "vertices": 10599,
+      "faces": 21210,
+      "diameter": 118.68455199129082,
+      "file_mb": 0.875,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.06192395999096334
+        ],
+        "describe": [
+          11.781397957121953
+        ],
+        "io_load_images": [
+          0.1431834299582988
+        ],
+        "embed_dino": [
+          0.2887941780500114
+        ],
+        "embed_clip": [
+          0.004359756829217076
+        ],
+        "mesh_sample": [
+          0.04720378783531487
+        ],
+        "embed_ulip": [
+          0.03684716089628637
+        ],
+        "cache_load": [
+          0.04703949694521725
+        ],
+        "cache_insert": [
+          0.0001133098267018795
+        ],
+        "cache_save": [
+          0.17194423102773726
+        ]
+      },
+      "total_s": 12.582807268481702
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000023",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000023/model.ply",
+      "vertices": 2947,
+      "faces": 5890,
+      "diameter": 164.75070487266856,
+      "file_mb": 0.239,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.01793572399765253
+        ],
+        "describe": [
+          11.650042560882866
+        ],
+        "io_load_images": [
+          0.11053130496293306
+        ],
+        "embed_dino": [
+          0.2914150410797447
+        ],
+        "embed_clip": [
+          0.004333327058702707
+        ],
+        "mesh_sample": [
+          0.014729032991454005
+        ],
+        "embed_ulip": [
+          0.035779085010290146
+        ],
+        "cache_load": [
+          0.04710299614816904
+        ],
+        "cache_insert": [
+          0.0003066819626837969
+        ],
+        "cache_save": [
+          0.1681574061512947
+        ]
+      },
+      "total_s": 12.340333160245791
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000024",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000024/model.ply",
+      "vertices": 10973,
+      "faces": 21946,
+      "diameter": 100.9638860225046,
+      "file_mb": 0.906,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.06114347488619387
+        ],
+        "describe": [
+          11.706214511068538
+        ],
+        "io_load_images": [
+          0.1429322869516909
+        ],
+        "embed_dino": [
+          0.28982838802039623
+        ],
+        "embed_clip": [
+          0.004427617881447077
+        ],
+        "mesh_sample": [
+          0.050259215058758855
+        ],
+        "embed_ulip": [
+          0.0369993019849062
+        ],
+        "cache_load": [
+          0.048332173842936754
+        ],
+        "cache_insert": [
+          0.0004426720552146435
+        ],
+        "cache_save": [
+          0.1717964180279523
+        ]
+      },
+      "total_s": 12.512376059778035
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000025",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000025/model.ply",
+      "vertices": 4423,
+      "faces": 8846,
+      "diameter": 129.20927221694544,
+      "file_mb": 0.362,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.025854181963950396
+        ],
+        "describe": [
+          11.831034376984462
+        ],
+        "io_load_images": [
+          0.1383672570809722
+        ],
+        "embed_dino": [
+          0.2887570590246469
+        ],
+        "embed_clip": [
+          0.004331626929342747
+        ],
+        "mesh_sample": [
+          0.021137902978807688
+        ],
+        "embed_ulip": [
+          0.036299086874350905
+        ],
+        "cache_load": [
+          0.04751636809669435
+        ],
+        "cache_insert": [
+          0.0005577639676630497
+        ],
+        "cache_save": [
+          0.17163305403664708
+        ]
+      },
+      "total_s": 12.565488677937537
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000026",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000026/model.ply",
+      "vertices": 4396,
+      "faces": 8792,
+      "diameter": 129.20183783773587,
+      "file_mb": 0.359,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.025441988836973906
+        ],
+        "describe": [
+          11.963157596997917
+        ],
+        "io_load_images": [
+          0.1403042278252542
+        ],
+        "embed_dino": [
+          0.2892759589012712
+        ],
+        "embed_clip": [
+          0.004515396896749735
+        ],
+        "mesh_sample": [
+          0.020865692058578134
+        ],
+        "embed_ulip": [
+          0.036144325975328684
+        ],
+        "cache_load": [
+          0.04853047407232225
+        ],
+        "cache_insert": [
+          9.480118751525879e-05
+        ],
+        "cache_save": [
+          0.170893969014287
+        ]
+      },
+      "total_s": 12.699224431766197
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000027",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000027/model.ply",
+      "vertices": 3747,
+      "faces": 7490,
+      "diameter": 163.3416664540925,
+      "file_mb": 0.306,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.021840926026925445
+        ],
+        "describe": [
+          11.892801078036427
+        ],
+        "io_load_images": [
+          0.15562548185698688
+        ],
+        "embed_dino": [
+          0.2861809378955513
+        ],
+        "embed_clip": [
+          0.004364697029814124
+        ],
+        "mesh_sample": [
+          0.018109802855178714
+        ],
+        "embed_ulip": [
+          0.0358717639464885
+        ],
+        "cache_load": [
+          0.04725877591408789
+        ],
+        "cache_insert": [
+          0.00042247306555509567
+        ],
+        "cache_save": [
+          0.1693515779916197
+        ]
+      },
+      "total_s": 12.631827514618635
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000028",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000028/model.ply",
+      "vertices": 13444,
+      "faces": 26884,
+      "diameter": 148.8054439451228,
+      "file_mb": 1.134,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.07814382808282971
+        ],
+        "describe": [
+          11.86076253093779
+        ],
+        "io_load_images": [
+          0.1524191708303988
+        ],
+        "embed_dino": [
+          0.28772078501060605
+        ],
+        "embed_clip": [
+          0.004350207978859544
+        ],
+        "mesh_sample": [
+          0.060156324878335
+        ],
+        "embed_ulip": [
+          0.0365229370072484
+        ],
+        "cache_load": [
+          0.04804008989594877
+        ],
+        "cache_insert": [
+          0.0003532220143824816
+        ],
+        "cache_save": [
+          0.17163527198135853
+        ]
+      },
+      "total_s": 12.700104368617758
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000029",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000029/model.ply",
+      "vertices": 2870,
+      "faces": 5736,
+      "diameter": 148.59084734037316,
+      "file_mb": 0.233,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.017295178025960922
+        ],
+        "describe": [
+          11.798541700933129
+        ],
+        "io_load_images": [
+          0.14452169998548925
+        ],
+        "embed_dino": [
+          0.2933723970782012
+        ],
+        "embed_clip": [
+          0.004486697958782315
+        ],
+        "mesh_sample": [
+          0.014977143844589591
+        ],
+        "embed_ulip": [
+          0.037136820144951344
+        ],
+        "cache_load": [
+          0.048784035025164485
+        ],
+        "cache_insert": [
+          0.00011202995665371418
+        ],
+        "cache_save": [
+          0.17454494698904455
+        ]
+      },
+      "total_s": 12.533772649941966
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000030",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000030/model.ply",
+      "vertices": 6094,
+      "faces": 12184,
+      "diameter": 123.93691881590834,
+      "file_mb": 0.501,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.03483513789251447
+        ],
+        "describe": [
+          11.747637783177197
+        ],
+        "io_load_images": [
+          0.13549570413306355
+        ],
+        "embed_dino": [
+          0.2866151318885386
+        ],
+        "embed_clip": [
+          0.004339007195085287
+        ],
+        "mesh_sample": [
+          0.027762503130361438
+        ],
+        "embed_ulip": [
+          0.03601618390530348
+        ],
+        "cache_load": [
+          0.04825764102861285
+        ],
+        "cache_insert": [
+          8.48500058054924e-05
+        ],
+        "cache_save": [
+          0.1691210709977895
+        ]
+      },
+      "total_s": 12.490165013354272
+    },
+    {
+      "dataset": "lmo",
+      "object_id": "obj_000001",
+      "num_views": 42,
+      "mesh": "object_database/lmo/obj_000001/model.ply",
+      "vertices": 5841,
+      "faces": 11678,
+      "diameter": 142.123990183654,
+      "file_mb": 0.602,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.03656494710594416
+        ],
+        "describe": [
+          11.924537665909156
+        ],
+        "io_load_images": [
+          0.13279258413240314
+        ],
+        "embed_dino": [
+          0.28772675804793835
+        ],
+        "embed_clip": [
+          0.004343596985563636
+        ],
+        "mesh_sample": [
+          0.03138751513324678
+        ],
+        "embed_ulip": [
+          0.035941443871706724
+        ],
+        "cache_load": [
+          0.0473670840729028
+        ],
+        "cache_insert": [
+          0.00028779194690287113
+        ],
+        "cache_save": [
+          0.16932479105889797
+        ]
+      },
+      "total_s": 12.670274178264663
+    },
+    {
+      "dataset": "lmo",
+      "object_id": "obj_000005",
+      "num_views": 42,
+      "mesh": "object_database/lmo/obj_000005/model.ply",
+      "vertices": 22831,
+      "faces": 45666,
+      "diameter": 284.1505285991852,
+      "file_mb": 2.503,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          2.2642503939568996
+        ],
+        "describe": [
+          11.958811016986147
+        ],
+        "io_load_images": [
+          0.13191059906966984
+        ],
+        "embed_dino": [
+          0.29742303397506475
+        ],
+        "embed_clip": [
+          0.004370358074083924
+        ],
+        "mesh_sample": [
+          0.12405843986198306
+        ],
+        "embed_ulip": [
+          0.03668025718070567
+        ],
+        "cache_load": [
+          0.04674665001221001
+        ],
+        "cache_insert": [
+          0.00043970299884676933
+        ],
+        "cache_save": [
+          0.17661639512516558
+        ]
+      },
+      "total_s": 15.041306847240776
+    },
+    {
+      "dataset": "lmo",
+      "object_id": "obj_000006",
+      "num_views": 42,
+      "mesh": "object_database/lmo/obj_000006/model.ply",
+      "vertices": 15736,
+      "faces": 31468,
+      "diameter": 185.9480290064717,
+      "file_mb": 1.695,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.09889312298037112
+        ],
+        "describe": [
+          11.941712516127154
+        ],
+        "io_load_images": [
+          0.13916013203561306
+        ],
+        "embed_dino": [
+          0.2902217279188335
+        ],
+        "embed_clip": [
+          0.00446897791698575
+        ],
+        "mesh_sample": [
+          0.0841137410607189
+        ],
+        "embed_ulip": [
+          0.0371132199652493
+        ],
+        "cache_load": [
+          0.04696056083776057
+        ],
+        "cache_insert": [
+          0.0003405618481338024
+        ],
+        "cache_save": [
+          0.1728785508312285
+        ]
+      },
+      "total_s": 12.815863111522049
+    },
+    {
+      "dataset": "lmo",
+      "object_id": "obj_000008",
+      "num_views": 42,
+      "mesh": "object_database/lmo/obj_000008/model.ply",
+      "vertices": 12655,
+      "faces": 25306,
+      "diameter": 318.7789155449954,
+      "file_mb": 1.325,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.0802885671146214
+        ],
+        "describe": [
+          11.727474935119972
+        ],
+        "io_load_images": [
+          0.1161609380505979
+        ],
+        "embed_dino": [
+          0.2881374331191182
+        ],
+        "embed_clip": [
+          0.0042986159678548574
+        ],
+        "mesh_sample": [
+          0.06642048107460141
+        ],
+        "embed_ulip": [
+          0.03620978491380811
+        ],
+        "cache_load": [
+          0.04621883505024016
+        ],
+        "cache_insert": [
+          9.58610326051712e-05
+        ],
+        "cache_save": [
+          0.16893082507885993
+        ]
+      },
+      "total_s": 12.534236276522279
+    },
+    {
+      "dataset": "lmo",
+      "object_id": "obj_000009",
+      "num_views": 42,
+      "mesh": "object_database/lmo/obj_000009/model.ply",
+      "vertices": 7912,
+      "faces": 15820,
+      "diameter": 155.69640271370926,
+      "file_mb": 0.828,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.04896417399868369
+        ],
+        "describe": [
+          11.892239505890757
+        ],
+        "io_load_images": [
+          0.14333342597819865
+        ],
+        "embed_dino": [
+          0.2930210118647665
+        ],
+        "embed_clip": [
+          0.004440815886482596
+        ],
+        "mesh_sample": [
+          0.04349297913722694
+        ],
+        "embed_ulip": [
+          0.03761859401129186
+        ],
+        "cache_load": [
+          0.048084476962685585
+        ],
+        "cache_insert": [
+          0.0004715619143098593
+        ],
+        "cache_save": [
+          0.17458659899421036
+        ]
+      },
+      "total_s": 12.686253144638613
+    },
+    {
+      "dataset": "lmo",
+      "object_id": "obj_000010",
+      "num_views": 42,
+      "mesh": "object_database/lmo/obj_000010/model.ply",
+      "vertices": 18473,
+      "faces": 36942,
+      "diameter": 197.0148243242359,
+      "file_mb": 2.008,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          1.7489322670735419
+        ],
+        "describe": [
+          11.885223145131022
+        ],
+        "io_load_images": [
+          0.14956149389036
+        ],
+        "embed_dino": [
+          0.29029096104204655
+        ],
+        "embed_clip": [
+          0.0043023559264838696
+        ],
+        "mesh_sample": [
+          0.09847128903493285
+        ],
+        "embed_ulip": [
+          0.03644077409990132
+        ],
+        "cache_load": [
+          0.047538342885673046
+        ],
+        "cache_insert": [
+          0.00035251188091933727
+        ],
+        "cache_save": [
+          0.16820289893075824
+        ]
+      },
+      "total_s": 14.429316039895639
+    },
+    {
+      "dataset": "lmo",
+      "object_id": "obj_000011",
+      "num_views": 42,
+      "mesh": "object_database/lmo/obj_000011/model.ply",
+      "vertices": 7479,
+      "faces": 14954,
+      "diameter": 193.0721420201182,
+      "file_mb": 0.792,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.04633568599820137
+        ],
+        "describe": [
+          11.723403637995943
+        ],
+        "io_load_images": [
+          0.13288487889803946
+        ],
+        "embed_dino": [
+          0.2869245500769466
+        ],
+        "embed_clip": [
+          0.004304866073653102
+        ],
+        "mesh_sample": [
+          0.03977266582660377
+        ],
+        "embed_ulip": [
+          0.03607908310368657
+        ],
+        "cache_load": [
+          0.047332901041954756
+        ],
+        "cache_insert": [
+          0.00010355096310377121
+        ],
+        "cache_save": [
+          0.17086705309338868
+        ]
+      },
+      "total_s": 12.488008873071522
+    },
+    {
+      "dataset": "lmo",
+      "object_id": "obj_000012",
+      "num_views": 42,
+      "mesh": "object_database/lmo/obj_000012/model.ply",
+      "vertices": 15970,
+      "faces": 31952,
+      "diameter": 173.76590154057968,
+      "file_mb": 1.678,
+      "reused_images": 42,
+      "reused_cams": 42,
+      "reused_clouds": 42,
+      "describe_rc": 0,
+      "describe_json": true,
+      "n_views_dino": 42,
+      "n_texts": 1,
+      "n_clouds": 1,
+      "shape_source": "fullmesh",
+      "cache_entries": 1030,
+      "timings": {
+        "mesh": [
+          0.09108081087470055
+        ],
+        "describe": [
+          11.867879783036187
+        ],
+        "io_load_images": [
+          0.1593927820213139
+        ],
+        "embed_dino": [
+          0.2861637519672513
+        ],
+        "embed_clip": [
+          0.004330456955358386
+        ],
+        "mesh_sample": [
+          0.08172874292358756
+        ],
+        "embed_ulip": [
+          0.03641854482702911
+        ],
+        "cache_load": [
+          0.04595526214689016
+        ],
+        "cache_insert": [
+          0.0002861618995666504
+        ],
+        "cache_save": [
+          0.1691858929116279
+        ]
+      },
+      "total_s": 12.742422189563513
+    }
+  ],
+  "stage1_quality_ndcg": {
+    "8": 0.5714,
+    "16": 0.582,
+    "32": 0.58,
+    "42": 0.5868
+  },
+  "invalidation": {
+    "gallery_size": 1257,
+    "sampled_objects": 15,
+    "per_object_encode_s": 0.305,
+    "extrapolated_full_reencode_s": 383.9,
+    "extrapolated_full_reencode_min": 6.4,
+    "invalidation_total_extrapolated": 383.91
+  }
+}

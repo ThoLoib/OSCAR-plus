@@ -1,0 +1,17 @@
+mode,configuration,dataset,bin,n,median_mm,median_norm
+3b,pose_proxy_cross_partial,ALL,0-50 %,1184,27.706,0.2373
+3b,pose_proxy_cross_partial,ALL,50-80 %,2394,18.762,0.1254
+3b,pose_proxy_cross_partial,ALL,80-95 %,2992,14.3905,0.1182
+3b,pose_proxy_cross_partial,ALL,95-100 %,5714,18.7995,0.1494
+3b,pose_proxy_cross_partial,ycbv,0-50 %,116,33.36,0.1764
+3b,pose_proxy_cross_partial,ycbv,50-80 %,899,23.738,0.1147
+3b,pose_proxy_cross_partial,ycbv,80-95 %,568,22.0495,0.1144
+3b,pose_proxy_cross_partial,ycbv,95-100 %,2540,22.6785,0.1473
+3b,pose_proxy_cross_partial,tless,0-50 %,864,22.679,0.2867
+3b,pose_proxy_cross_partial,tless,50-80 %,1148,12.8905,0.1225
+3b,pose_proxy_cross_partial,tless,80-95 %,2038,11.791,0.111
+3b,pose_proxy_cross_partial,tless,95-100 %,2666,13.936,0.1441
+3b,pose_proxy_cross_partial,lmo,0-50 %,204,30.9435,0.1811
+3b,pose_proxy_cross_partial,lmo,50-80 %,347,30.096,0.1547
+3b,pose_proxy_cross_partial,lmo,80-95 %,386,25.679,0.1454
+3b,pose_proxy_cross_partial,lmo,95-100 %,508,27.8605,0.1723

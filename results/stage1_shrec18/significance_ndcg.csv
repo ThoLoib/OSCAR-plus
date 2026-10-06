@@ -1,0 +1,11 @@
+comparison,configuration_a,configuration_b,mean_d_nDCG,median_d_nDCG,ci_lo,ci_hi,wilcoxon_p,n_A_better,n_B_better,n_tied,ci_significant,wilcoxon_significant,verdict,n_paired
+shape enc: ULIP-2 vs Uni3D (isolated),shape_only,shape_only_uni3d,0.0017,0.0,-0.0053,0.0089,0.1104,1002,972,127,no,no,tie,2101
+shape enc: ULIP-2 vs Uni3D (fused),fusion,fusion_uni3d,-0.0045,0.0,-0.0081,-0.0009,0.5406,1009,1027,65,YES,no,outlier-driven (1009:1027) -> treat as tie,2101
+colour: XYZ+RGB vs XYZ (isolated),shape_only,shape_only_xyz_checkpoint,-0.0068,-0.0075,-0.0164,0.0033,0.0007,847,1152,102,no,YES,"CONSISTENT (small, systematic; mean noisy)",2101
+colour: XYZ+RGB vs XYZ (fused),fusion,fusion_xyz_checkpoint,-0.0012,-0.0021,-0.0058,0.0035,0.0306,907,1119,75,no,YES,"CONSISTENT (small, systematic; mean noisy)",2101
+ref: partial vs full-mesh (isolated),shape_only,shape_only_fullmesh,0.0398,0.0,0.0275,0.0523,0.0,1021,974,106,YES,YES,REAL,2101
+ref: partial vs full-mesh (fused),fusion,fusion_fullmesh,-0.0067,-0.0026,-0.0134,0.0003,0.0002,904,1127,70,no,YES,"CONSISTENT (small, systematic; mean noisy)",2101
+appearance: DINOv2 vs SigLIP (isolated),appearance_only,appearance_only_siglip,0.0341,0.0279,0.0251,0.0431,0.0,1213,811,77,YES,YES,REAL,2101
+combiner: weighted vs RRF (fused),fusion,fusion_rrf,0.0124,0.0132,0.009,0.0158,0.0,1320,718,63,YES,YES,REAL,2101
+geometry: none vs GeDi+RANSAC (fused),fusion,fusion_geo_trimmed_distance,-0.0537,-0.0064,-0.0616,-0.046,0.0,599,1264,238,YES,YES,REAL,2101
+config: BASE 16v/k8 -> 42v/k5 (fused),fusion_views16_shape_topk8,fusion,0.0021,-0.0002,0.0002,0.0041,0.6023,938,1064,99,YES,no,outlier-driven (938:1064) -> treat as tie,2101

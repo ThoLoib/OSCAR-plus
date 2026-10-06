@@ -1,0 +1,21 @@
+# Thin overlay on the existing oscar image, adding headless-GL system libs for
+# the Stage-3 VSD depth renderer (pyrender + EGL).
+#
+# WHY a derived image instead of editing the main Dockerfile: rebuilding the
+# main Dockerfile from scratch fails on a pre-existing pip layer (opencv-python
+# / CLIP-from-git no longer resolve), so we must NOT rebuild it. Layering on top
+# of the already-built image adds only one fast apt layer and leaves the working
+# image untouched.
+#
+# These are the vendor-neutral glvnd loader + GL libs (libEGL.so.1 + the
+# egl_vendor.d config); the NVIDIA driver injects libEGL_nvidia at runtime via
+# NVIDIA_DRIVER_CAPABILITIES=all (set on the oscar service in docker-compose).
+# libfontconfig1 is pulled in by vispy's import chain.
+#
+# Build (retags the oscar image in place so docker-compose picks it up):
+#   docker build -f Dockerfile.egl -t tholoi/oscar-plus .
+FROM tholoi/oscar-plus
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    libglvnd0 libegl1 libgl1 libopengl0 libgles2 libfontconfig1 && \
+    rm -rf /var/lib/apt/lists/*

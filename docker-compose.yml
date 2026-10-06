@@ -1,0 +1,103 @@
+services:
+  oscar-plus:
+    image: tholoi/oscar-plus
+    build: .
+    volumes:
+      - .:/app
+      - ../ULIP_thesis:/ulip
+      - ../Uni3D:/uni3d
+      - /tmp/.X11-unix:/tmp/.X11-unix          # GUI (PyBullet-Fenster via WSLg/X)
+      - hf_cache:/root/.cache/huggingface
+      - torch_cache:/root/.cache/torch
+      - clip_cache:/root/.cache/clip
+    environment:
+      - DISPLAY=${DISPLAY:-:1}                 # GUI (run_pipeline_sim)
+      # Forward the paths-file override into the container; without this a
+      # host-set OSCAR_PATHS_FILE would be dropped by the self-wrapping entry
+      # points and the run would silently use config/paths.yaml instead.
+      - OSCAR_PATHS_FILE=${OSCAR_PATHS_FILE:-}
+      # torch ships libgomp.so.1; without it on the path open3d fails to import
+      # (needed for step7/step8 + Stage-3 D_sym point sampling).
+      - LD_LIBRARY_PATH=/usr/local/lib/python3.11/dist-packages/torch/lib
+      # inject libEGL_nvidia + the glvnd loader so pyrender can render depth
+      # headless on the GPU (Stage-3 VSD renderer, stage3_render.py).
+      - NVIDIA_DRIVER_CAPABILITIES=all
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+  # dGeDi (distilled GeDi) geometry re-rank service. Isolated CUDA 11.8 image
+  # (oscar-dgedi), same HTTP pattern as foundationpose. server.py imports the dGeDi repo
+  # (/dgedi) and reads the gallery descriptor cache built by
+  # preprocessing/precompute_dgedi.py.
+  dgedi:
+    image: oscar-dgedi
+    volumes:
+      - ../dGeDi:/dgedi                         # dGeDi repo: core/ utils.py config checkpoints
+      - .:/oscar                                # this repo: server.py + gallery cache + meshes
+    working_dir: /dgedi
+    environment:
+      - DGEDI_REPO=/dgedi
+    command: >
+      python3 /oscar/services/dgedi/server.py
+      --config /dgedi/config_dgedi.yaml
+      --cache-dir /oscar/${DGEDI_CACHE_DIR:-caches/dgedi/bop}
+      --port 5061
+    ports:
+      - "5061:5061"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python3", "-c",
+             "import urllib.request; urllib.request.urlopen('http://localhost:5061/health', timeout=5)"]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+      start_period: 60s
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+  foundationpose:
+    image: shingarey/foundationpose_custom_cuda121:latest
+    volumes:
+      - ../FoundationPose:/workspace            # FP repo + server script + weights
+      - .:/oscar:ro                             # read-only access to OSCAR data (CAD models etc.)
+    ports:
+      - "5050:5050"
+    environment:
+      - OPENCV_IO_ENABLE_OPENEXR=1
+    entrypoint: >
+      bash -c "
+        source /opt/conda/etc/profile.d/conda.sh &&
+        conda activate my &&
+        cd /workspace &&
+        python foundationpose_server.py --port 5050
+      "
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5050/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+      start_period: 30s
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+volumes:
+  hf_cache:
+  torch_cache:
+  clip_cache:

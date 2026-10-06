@@ -1,0 +1,117 @@
+{
+  "primary": "clip_pruned_dino_ulip",
+  "num_queries": 10500,
+  "NN_accuracy": 85.70476190476191,
+  "FT_mean": 0.5747111128187761,
+  "ST_mean": 0.7551395130083602,
+  "F1_mean": 0.16025315904938936,
+  "nDCG@2R_mean": 0.733766052207981,
+  "mAP": 0.5921647739487647,
+  "ANMRR_mean": 0.3373740677537569,
+  "variants": {
+    "clip_only": {
+      "num_queries": 10500,
+      "NN_accuracy": 67.95238095238095,
+      "FT_mean": 0.5747111128187761,
+      "ST_mean": 0.7551395130083602,
+      "F1_mean": 0.16020207180760443,
+      "nDCG@2R_mean": 0.7199045967884805,
+      "mAP": 0.5800269698592497,
+      "ANMRR_mean": 0.3391734103739566
+    },
+    "dino_only_full": {
+      "num_queries": 10500,
+      "NN_accuracy": 83.02857142857142,
+      "FT_mean": 0.6292451704181977,
+      "ST_mean": 0.7532666877239311,
+      "F1_mean": 0.19996743083280935,
+      "nDCG@2R_mean": 0.751030379142061,
+      "mAP": 0.6466355145234585,
+      "ANMRR_mean": 0.2973938648456693
+    },
+    "ulip_only_full": {
+      "num_queries": 10500,
+      "NN_accuracy": 68.11428571428571,
+      "FT_mean": 0.4529154691386179,
+      "ST_mean": 0.606600566149824,
+      "F1_mean": 0.1581321790754683,
+      "nDCG@2R_mean": 0.5977715994031577,
+      "mAP": 0.4514879956374309,
+      "ANMRR_mean": 0.46690726406200284
+    },
+    "clip_dino_ulip_full": {
+      "num_queries": 10500,
+      "NN_accuracy": 88.43809523809524,
+      "FT_mean": 0.6917522612915135,
+      "ST_mean": 0.832994270865395,
+      "F1_mean": 0.2139110414872965,
+      "nDCG@2R_mean": 0.8228935168078814,
+      "mAP": 0.7182112941790211,
+      "ANMRR_mean": 0.22705404749890268
+    },
+    "oscar_maxview": {
+      "num_queries": 10500,
+      "NN_accuracy": 84.87619047619047,
+      "FT_mean": 0.5747111128187761,
+      "ST_mean": 0.7551395130083602,
+      "F1_mean": 0.16025041611331314,
+      "nDCG@2R_mean": 0.7331260948456101,
+      "mAP": 0.59184697530899,
+      "ANMRR_mean": 0.3374616876342658
+    },
+    "oscar_softmax": {
+      "num_queries": 10500,
+      "NN_accuracy": 85.03809523809524,
+      "FT_mean": 0.5747111128187761,
+      "ST_mean": 0.7551395130083602,
+      "F1_mean": 0.1602482997111967,
+      "nDCG@2R_mean": 0.7335564300246996,
+      "mAP": 0.5921951596536152,
+      "ANMRR_mean": 0.33740184197099066
+    },
+    "clip_pruned_dino_ulip": {
+      "num_queries": 10500,
+      "NN_accuracy": 85.70476190476191,
+      "FT_mean": 0.5747111128187761,
+      "ST_mean": 0.7551395130083602,
+      "F1_mean": 0.16025315904938936,
+      "nDCG@2R_mean": 0.733766052207981,
+      "mAP": 0.5921647739487647,
+      "ANMRR_mean": 0.3373740677537569
+    }
+  },
+  "config": {
+    "ref_dir": "../object_images/MI3DOR",
+    "desc_file": "../object_database/MI3DOR/descriptions_attributes.json",
+    "cad_mesh_glob": "../object_database/MI3DOR/model/test/*/*.obj",
+    "result_folder": "runs/stage2_mi3dor/partial",
+    "topk": [
+      15
+    ],
+    "TOP_F": 20,
+    "clip_top_k": 20,
+    "clip_prune_mode": "threshold",
+    "clip_tau": 0.37,
+    "clip_fallback_k": 20,
+    "clip_full_top_k_used": 161616,
+    "dino_top_k": 9999,
+    "ulip2_top_k": 9999,
+    "dino_full_top_k_used": 9999,
+    "ulip_full_top_k_used": 9999,
+    "fusion_top_k": 9999,
+    "fusion_method": "weighted_sum",
+    "weight_clip": 0.3,
+    "weight_dino": 0.4,
+    "weight_ulip": 0.3,
+    "ulip_repo_path": "/ulip",
+    "ulip2_checkpoint": "/ulip/checkpoints/ulip2_pointbert_10k.pt",
+    "ulip2_mode": "cross",
+    "ulip2_use_partial_views": true,
+    "ulip_active": true
+  },
+  "ulip_fallback_cross_count": 10500,
+  "clip_shortlist_fallback_count": 10174,
+  "clip_shortlist_size_mean": 19.688,
+  "clip_shortlist_size_median": 20.0,
+  "total_queries_seen": 10500
+}

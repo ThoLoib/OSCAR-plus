@@ -1,0 +1,261 @@
+# Changes to FoundationPose (NVlabs) used by this project
+#
+# Apply on top of upstream commit e3d597b of https://github.com/NVlabs/FoundationPose
+#   cd FoundationPose && git apply /path/to/foundationpose.patch
+#
+# Contents
+#   foundationpose_server.py   new: the HTTP service this project talks to
+#                              (pipeline/foundationpose_bridge.py -> POST /estimate_pose)
+#   bundlesdf/mycuda/setup.py  build fix for the CUDA extension
+#   estimater.py               drops a per-construction /tmp/<uuid>.obj export
+#                              (filled the disk over long evaluation runs)
+#
+# These are modifications of NVIDIA's code and therefore follow the NVIDIA
+# Source Code License of the upstream repository, not this project's MIT
+# license. See THIRD_PARTY_LICENSES.md.
+diff --git a/bundlesdf/mycuda/setup.py b/bundlesdf/mycuda/setup.py
+index ad00334..1b24836 100644
+--- a/bundlesdf/mycuda/setup.py
++++ b/bundlesdf/mycuda/setup.py
+@@ -15,8 +15,9 @@ from torch.utils.cpp_extension import load
+ code_dir = os.path.dirname(os.path.realpath(__file__))
+ 
+ 
+-nvcc_flags = ['-Xcompiler', '-O3', '-std=c++14', '-U__CUDA_NO_HALF_OPERATORS__', '-U__CUDA_NO_HALF_CONVERSIONS__', '-U__CUDA_NO_HALF2_OPERATORS__']
+-c_flags = ['-O3', '-std=c++14']
++# PyTorch headers in this environment require C++17.
++nvcc_flags = ['-Xcompiler', '-O3', '-std=c++17', '-U__CUDA_NO_HALF_OPERATORS__', '-U__CUDA_NO_HALF_CONVERSIONS__', '-U__CUDA_NO_HALF2_OPERATORS__']
++c_flags = ['-O3', '-std=c++17']
+ 
+ setup(
+     name='common',
+diff --git a/estimater.py b/estimater.py
+index e147d56..cf071c2 100644
+--- a/estimater.py
++++ b/estimater.py
+@@ -65,9 +65,13 @@ class FoundationPose:
+     logging.info(f'self.pts:{self.pts.shape}')
+     self.mesh_path = None
+     self.mesh = mesh
+-    if self.mesh is not None:
+-      self.mesh_path = f'/tmp/{uuid.uuid4()}.obj'
+-      self.mesh.export(self.mesh_path)
++    # NOTE: self.mesh_path is never read anywhere (make_mesh_tensors uses the
++    # in-memory `mesh` object). The original code exported the mesh to
++    # /tmp/<uuid>.obj on EVERY estimator construction and never deleted it; the
++    # HTTP server builds a fresh estimator per request, so this leaked ~1MB per
++    # pose call and filled the container's writable layer (109GB / 95k files
++    # over one multi-day Stage-3 run). The export is dead code — removed.
++    # (OSCAR Stage-3 disk-leak fix, 2026-08-17.)
+     self.mesh_tensors = make_mesh_tensors(self.mesh)
+ 
+     if symmetry_tfs is None:
+diff --git a/foundationpose_server.py b/foundationpose_server.py
+new file mode 100644
+index 0000000..b924447
+--- /dev/null
++++ b/foundationpose_server.py
+@@ -0,0 +1,203 @@
++"""Minimal HTTP server for FoundationPose inference.
++
++Runs inside the FoundationPose Docker container and exposes a single
++endpoint that OSCAR calls from its own container over the compose network.
++
++Endpoints:
++    GET  /health          -> {"status": "ok"}
++    POST /estimate_pose   -> {"pose_matrix": [[...]], "confidence": float}
++
++The FoundationPose model components (scorer, refiner, glctx) are loaded
++lazily on the first /estimate_pose request to avoid permanent GPU memory
++use when idle.
++
++Start:
++    python foundationpose_server.py [--port 5050]
++"""
++
++import argparse
++import base64
++import io
++import json
++import logging
++import os
++import sys
++import traceback
++
++import numpy as np
++from flask import Flask, Response, jsonify, request
++
++# ---------------------------------------------------------------------------
++# FoundationPose imports (repo root must be on sys.path)
++# ---------------------------------------------------------------------------
++REPO_DIR = os.path.dirname(os.path.abspath(__file__))
++if REPO_DIR not in sys.path:
++    sys.path.insert(0, REPO_DIR)
++
++app = Flask(__name__)
++logging.basicConfig(
++    level=logging.INFO,
++    format="%(asctime)s | %(levelname)-8s | %(name)s | %(message)s",
++    datefmt="%H:%M:%S",
++)
++logger = logging.getLogger("fp_server")
++
++# ---------------------------------------------------------------------------
++# Lazy-loaded globals
++# ---------------------------------------------------------------------------
++_scorer = None
++_refiner = None
++_glctx = None
++
++
++def _ensure_models():
++    """Load scorer, refiner and GL context once on first call."""
++    global _scorer, _refiner, _glctx
++    if _scorer is not None:
++        return
++
++    logger.info("Loading FoundationPose models (first request)...")
++    from learning.training.predict_pose_refine import PoseRefinePredictor
++    from learning.training.predict_score import ScorePredictor
++    from estimater import dr
++
++    _scorer = ScorePredictor()
++    _refiner = PoseRefinePredictor()
++    _glctx = dr.RasterizeCudaContext()
++    logger.info("FoundationPose models loaded.")
++
++
++# ---------------------------------------------------------------------------
++# Endpoints
++# ---------------------------------------------------------------------------
++
++@app.route("/health", methods=["GET"])
++def health():
++    return jsonify({"status": "ok"})
++
++
++@app.route("/estimate_pose", methods=["POST"])
++def estimate_pose():
++    """Run FoundationPose register() on the provided inputs.
++
++    Expected JSON payload:
++        rgb_b64       : base64-encoded uint8 RGB array bytes (np.save format)
++        depth_b64     : base64-encoded float32 depth array bytes
++        mask_b64      : base64-encoded uint8 mask array bytes
++        K             : 3x3 camera intrinsic matrix (list of lists)
++        cad_path      : absolute path to CAD mesh (must be accessible inside this container)
++        scale         : float scale factor to apply to the mesh
++        refine_iter   : int number of refinement iterations (default 5)
++        debug         : int debug level (default 0)
++        debug_dir     : str debug output directory (default /tmp/fp_debug)
++    """
++    try:
++        _ensure_models()
++
++        data = request.get_json(force=True)
++
++        # Decode arrays from base64 numpy .npy blobs
++        rgb = _decode_array(data["rgb_b64"], np.uint8)
++        depth = _decode_array(data["depth_b64"], np.float32)
++        mask = _decode_array(data["mask_b64"], np.uint8)
++        K = np.array(data["K"], dtype=np.float64)
++
++        cad_path = str(data["cad_path"])
++        scale = float(data.get("scale", 1.0))
++        refine_iter = int(data.get("refine_iter", 5))
++        debug = int(data.get("debug", 0))
++        debug_dir = str(data.get("debug_dir", "/tmp/fp_debug"))
++
++        logger.info(
++            "estimate_pose: cad=%s scale=%.3f iter=%d rgb=%s depth=%s",
++            cad_path, scale, refine_iter, rgb.shape, depth.shape,
++        )
++
++        import trimesh
++        from estimater import FoundationPose
++
++        mesh = trimesh.load(cad_path, force="mesh")
++        if scale != 1.0:
++            mesh.apply_scale(float(scale))
++
++        os.makedirs(debug_dir, exist_ok=True)
++
++        estimator = FoundationPose(
++            model_pts=mesh.vertices,
++            model_normals=mesh.vertex_normals,
++            mesh=mesh,
++            scorer=_scorer,
++            refiner=_refiner,
++            glctx=_glctx,
++            debug=debug,
++            debug_dir=debug_dir,
++        )
++
++        pose = estimator.register(
++            K=K,
++            rgb=rgb,
++            depth=depth,
++            ob_mask=mask,
++            iteration=refine_iter,
++        )
++
++        pose_matrix = np.asarray(pose, dtype=np.float64).reshape(4, 4)
++        if not np.isfinite(pose_matrix).all():
++            return _error_response("FoundationPose returned non-finite pose (NaN/Inf)", 500)
++
++        confidence = 1.0
++        if (
++            hasattr(estimator, "scores")
++            and estimator.scores is not None
++            and len(estimator.scores) > 0
++        ):
++            confidence = float(estimator.scores[0].cpu().numpy())
++
++        return jsonify({
++            "pose_matrix": pose_matrix.tolist(),
++            "confidence": confidence,
++        })
++
++    except Exception:
++        tb = traceback.format_exc()
++        logger.error("estimate_pose failed:\n%s", tb)
++        return _error_response(tb, 500)
++
++
++# ---------------------------------------------------------------------------
++# Helpers
++# ---------------------------------------------------------------------------
++
++def _decode_array(b64_str: str, dtype) -> np.ndarray:
++    """Decode a base64-encoded numpy .npy blob back to an ndarray."""
++    raw = base64.b64decode(b64_str)
++    return np.load(io.BytesIO(raw), allow_pickle=False).astype(dtype)
++
++
++def _encode_array(arr: np.ndarray) -> str:
++    """Encode a numpy array to a base64 string via .npy format."""
++    buf = io.BytesIO()
++    np.save(buf, arr)
++    return base64.b64encode(buf.getvalue()).decode("ascii")
++
++
++def _error_response(message: str, status: int) -> Response:
++    return Response(
++        json.dumps({"error": message}),
++        status=status,
++        mimetype="application/json",
++    )
++
++
++# ---------------------------------------------------------------------------
++# CLI
++# ---------------------------------------------------------------------------
++
++if __name__ == "__main__":
++    parser = argparse.ArgumentParser(description="FoundationPose HTTP server")
++    parser.add_argument("--port", type=int, default=5050, help="Port (default 5050)")
++    parser.add_argument("--host", default="0.0.0.0", help="Bind address")
++    args = parser.parse_args()
++
++    logger.info("Starting FoundationPose server on %s:%d", args.host, args.port)
++    app.run(host=args.host, port=args.port, threaded=False)

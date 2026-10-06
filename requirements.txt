@@ -1,0 +1,11 @@
+httpx==0.27.0
+open3d
+open-clip-torch
+trimesh
+imageio
+easydict
+timm
+scipy
+pyyaml
+pyyaml_env_tag
+termcolor

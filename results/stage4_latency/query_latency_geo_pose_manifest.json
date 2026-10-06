@@ -1,0 +1,68 @@
+{
+ "ts": "2026-09-25T15:51:52",
+ "invocation": "docker compose run --rm oscar; PYTHONHASHSEED=0 python3 -u experiments/stage4_latency.py --dataset ycbv --n-queries 50 --views 16,42 --geometry --geo-k 5 (pose on, --refine-iter 5, seed 0 = default as in the run of 04.09.)",
+ "gpu": "NVIDIA GeForce RTX 4090",
+ "dgedi_container": "FRESH: recreated at 2026-09-25T15:41:49+02:00 via --force-recreate (previously up continuously for 7 days \u2014 the first measurement of 5.45 s came from a container under sustained load); health ok, n_gallery 1316. foundationpose healthy (port 5050).",
+ "query_identity": "per view block all 52 (scene, im, obj) including 2 warmups IDENTICAL to query_latency_ycbv.json",
+ "total_s_fix": "Records of this run: total_s = _wall(timings) \u2014 the old run counted the retrieval_total bracket twice (16V record median 2.70 instead of 2.18 s); the per_query_total_s summary was never affected.",
+ "finding_1_11_vs_1_12": "RESULTS.md Tab. 4.3 '1.12 s' = end-to-end median minus pose median (2.6024-1.4870=1.1154); medians are not additive. Correct (median of the per-query retrieval sums, old run): 1.110 s.",
+ "sums_per_query": {
+  "description": "summed per query, then median/IQR/P95 (n=50): 1=io_load+segment+pointcloud+encode_query+clip+dino+ulip+fusion, 2=+geometry, 3=+pose, 4=+geometry+pose",
+  "views": {
+   "16": {
+    "1_retrieval": [
+     0.781413183780387,
+     0.01247670769225806,
+     0.8005674745654687
+    ],
+    "2_retr_geo": [
+     2.5614061965607107,
+     0.3048089981311932,
+     3.1628810285124924
+    ],
+    "3_retr_pose": [
+     2.2774754574056715,
+     1.2245072782970965,
+     4.5137814926914865
+    ],
+    "4_retr_geo_pose": [
+     4.0397543751169,
+     1.8738380548311397,
+     6.6057992977323
+    ]
+   },
+   "42": {
+    "1_retrieval": [
+     1.0365661440882832,
+     0.012945684255100787,
+     1.0519102027872578
+    ],
+    "2_retr_geo": [
+     2.912299895193428,
+     0.2824058731785044,
+     3.374373581889085
+    ],
+    "3_retr_pose": [
+     2.5224164905957878,
+     1.1891534607857466,
+     4.751440247520804
+    ],
+    "4_retr_geo_pose": [
+     4.423926007933915,
+     1.3736075699562207,
+     6.850913504697382
+    ]
+   }
+  }
+ },
+ "guard": {
+  "16": {
+   "retrieval": "0.781 vs old 0.784 (-0.003) OK",
+   "pose": "1.487 vs old 1.402 (+0.085, +6.1% \u2014 FP spread, IQR 1.2 s; median of both runs within IQR)"
+  },
+  "42": {
+   "retrieval": "1.037 vs old 1.110 (-0.073, -6.6% \u2014 dino 533 vs 562 ms, ulip 191 vs 219 ms faster)",
+   "pose": "1.467 vs old 1.487 (-0.020) OK"
+  }
+ }
+}

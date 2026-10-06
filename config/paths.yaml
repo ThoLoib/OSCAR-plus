@@ -1,0 +1,37 @@
+# All input and output locations of the pipeline and the experiments.
+# Relative paths are resolved against the repository root.
+#
+# Every entry can be overridden per CLI flag (--datasets-root, --cad-root,
+# --gallery-root, --caches-root, --runs-root, --checkpoint-...) or by pointing
+# OSCAR_PATHS_FILE at an alternative copy of this file.
+
+data:
+  # Downloaded benchmark data (SHREC'18, BOP test scenes, MI3DOR queries).
+  # Layout per dataset: see README "Datasets".
+  datasets_root: eval/datasets
+  # CAD models per gallery + generated captions (descriptions_attributes.json).
+  cad_root: object_database
+
+tools:
+  # Blender 3.4.1 binary on the HOST (rendering runs outside the containers).
+  # Exactly 3.4.1: newer/older builds fail silently (rc=0, no PIL).
+  blender: blender
+
+checkpoints:
+  # Shape encoders (mounted into the container, see docker-compose.yml).
+  ulip2: /ulip/checkpoints/ulip2_pointbert_10k.pt
+  ulip2_xyz: /ulip/checkpoints/ulip2_pointbert_8k_xyz.pt
+  uni3d: /uni3d/modelzoo/uni3d-g/model.pt
+
+generated:
+  # Renderings, partial point clouds and embedding caches, one folder per
+  # gallery (built by preprocess_gallery.py).
+  gallery_root: object_images
+  # Derived caches: dGeDi descriptor galleries (caches/dgedi/<name>),
+  # query-embedding caches, score stores.
+  caches_root: caches
+
+outputs:
+  # Every new experiment or demo run writes below this folder.
+  # Never write into results/ — that tree is the frozen thesis record.
+  runs_root: runs

@@ -1,0 +1,6 @@
+{
+ "ts": "2026-09-25T15:35:57",
+ "git_commit_script": "99180da9 (--timing-json in dgedi_service/precompute_gallery.py), method as c2605f3b",
+ "gpu": "NVIDIA GeForce RTX 4090",
+ "method": "Manifest .stage4_dgedi_warm_n59/manifest.json (59 target CADs: ycbv textured_simple.obj, tless/lmo model.ply), docker compose run --rm --no-deps dgedi precompute_gallery.py --overwrite --timing-json; working folder inside the repo; n_points 10000, mode multi_scale, device cuda"
+}

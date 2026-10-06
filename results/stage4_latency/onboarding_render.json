@@ -1,0 +1,1740 @@
+{
+  "experiment": "stage4a_onboarding",
+  "base_gallery": "G_proxy (3b) = gso + housecat6d + itodd = 1257",
+  "stages": [
+    "render"
+  ],
+  "view_counts": [
+    16,
+    42
+  ],
+  "n_objects": 59,
+  "provenance": {
+    "timestamp": "2026-09-07T08:59:43+0200",
+    "git_commit": "49f17f65",
+    "cpu_count": 24
+  },
+  "model_load_once_s": {},
+  "by_views": {
+    "16": {
+      "per_step": {
+        "render": {
+          "n": 59,
+          "median": 10.749272200046107,
+          "mean": 11.775986451517506,
+          "std": 1.6908040243058116,
+          "min": 10.046003661118448,
+          "max": 14.452998789027333,
+          "q25": 10.405103525030427,
+          "q75": 13.869394856039435,
+          "iqr": 3.464291331009008,
+          "p95": 14.258163815317676,
+          "sum": 694.7832006395329
+        }
+      },
+      "per_object_total_s": {
+        "n": 59,
+        "median": 10.749272200046107,
+        "mean": 11.775986451517506,
+        "std": 1.6908040243058116,
+        "min": 10.046003661118448,
+        "max": 14.452998789027333,
+        "q25": 10.405103525030427,
+        "q75": 13.869394856039435,
+        "iqr": 3.464291331009008,
+        "p95": 14.258163815317676,
+        "sum": 694.7832006395329
+      }
+    },
+    "42": {
+      "per_step": {
+        "render": {
+          "n": 59,
+          "median": 25.929381870897487,
+          "mean": 28.664029133336427,
+          "std": 4.260189632791987,
+          "min": 24.686916175996885,
+          "max": 35.35965195694007,
+          "q25": 25.311897108098492,
+          "q75": 33.92682272591628,
+          "iqr": 8.61492561781779,
+          "p95": 35.03673756865319,
+          "sum": 1691.1777188668493
+        }
+      },
+      "per_object_total_s": {
+        "n": 59,
+        "median": 25.929381870897487,
+        "mean": 28.664029133336427,
+        "std": 4.260189632791987,
+        "min": 24.686916175996885,
+        "max": 35.35965195694007,
+        "q25": 25.311897108098492,
+        "q75": 33.92682272591628,
+        "iqr": 8.61492561781779,
+        "p95": 35.03673756865319,
+        "sum": 1691.1777188668493
+      }
+    }
+  },
+  "records": [
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000001",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000001/textured_simple.obj",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          14.356098097981885
+        ]
+      },
+      "total_s": 14.356098097981885
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000002",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000002/textured_simple.obj",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          14.109435114078224
+        ]
+      },
+      "total_s": 14.109435114078224
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000003",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000003/textured_simple.obj",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          14.104232908925042
+        ]
+      },
+      "total_s": 14.104232908925042
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000004",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000004/textured_simple.obj",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          14.234886561986059
+        ]
+      },
+      "total_s": 14.234886561986059
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000005",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000005/textured_simple.obj",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          13.963693398050964
+        ]
+      },
+      "total_s": 13.963693398050964
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000006",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000006/textured_simple.obj",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          14.148114006966352
+        ]
+      },
+      "total_s": 14.148114006966352
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000007",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000007/textured_simple.obj",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          14.26109649403952
+        ]
+      },
+      "total_s": 14.26109649403952
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000008",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000008/textured_simple.obj",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          13.972723811864853
+        ]
+      },
+      "total_s": 13.972723811864853
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000009",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000009/textured_simple.obj",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          14.452998789027333
+        ]
+      },
+      "total_s": 14.452998789027333
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000010",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000010/textured_simple.obj",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          13.534268866060302
+        ]
+      },
+      "total_s": 13.534268866060302
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000011",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000011/textured_simple.obj",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          13.950243306113407
+        ]
+      },
+      "total_s": 13.950243306113407
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000012",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000012/textured_simple.obj",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          13.889212100068107
+        ]
+      },
+      "total_s": 13.889212100068107
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000013",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000013/textured_simple.obj",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          13.749058526940644
+        ]
+      },
+      "total_s": 13.749058526940644
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000014",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000014/textured_simple.obj",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          13.91222170717083
+        ]
+      },
+      "total_s": 13.91222170717083
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000015",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000015/textured_simple.obj",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          14.074173560133204
+        ]
+      },
+      "total_s": 14.074173560133204
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000016",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000016/textured_simple.obj",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          14.25783796212636
+        ]
+      },
+      "total_s": 14.25783796212636
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000017",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000017/textured_simple.obj",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          13.797237915918231
+        ]
+      },
+      "total_s": 13.797237915918231
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000018",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000018/textured_simple.obj",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          13.184724327875301
+        ]
+      },
+      "total_s": 13.184724327875301
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000019",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000019/textured_simple.obj",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          13.849577612010762
+        ]
+      },
+      "total_s": 13.849577612010762
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000020",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000020/textured_simple.obj",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          13.755929962033406
+        ]
+      },
+      "total_s": 13.755929962033406
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000021",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000021/textured_simple.obj",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          13.912252312060446
+        ]
+      },
+      "total_s": 13.912252312060446
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000001",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000001/model.ply",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          11.409536302089691
+        ]
+      },
+      "total_s": 11.409536302089691
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000002",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000002/model.ply",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          11.391611383063719
+        ]
+      },
+      "total_s": 11.391611383063719
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000003",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000003/model.ply",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          11.695546051952988
+        ]
+      },
+      "total_s": 11.695546051952988
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000004",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000004/model.ply",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          10.141732344869524
+        ]
+      },
+      "total_s": 10.141732344869524
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000005",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000005/model.ply",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          10.45697334385477
+        ]
+      },
+      "total_s": 10.45697334385477
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000006",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000006/model.ply",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          10.130385488970205
+        ]
+      },
+      "total_s": 10.130385488970205
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000007",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000007/model.ply",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          10.46509412303567
+        ]
+      },
+      "total_s": 10.46509412303567
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000008",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000008/model.ply",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          10.459515323862433
+        ]
+      },
+      "total_s": 10.459515323862433
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000009",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000009/model.ply",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          10.257526752073318
+        ]
+      },
+      "total_s": 10.257526752073318
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000010",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000010/model.ply",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          10.316725675947964
+        ]
+      },
+      "total_s": 10.316725675947964
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000011",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000011/model.ply",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          10.754799037007615
+        ]
+      },
+      "total_s": 10.754799037007615
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000012",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000012/model.ply",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          10.749272200046107
+        ]
+      },
+      "total_s": 10.749272200046107
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000013",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000013/model.ply",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          10.314177805092186
+        ]
+      },
+      "total_s": 10.314177805092186
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000014",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000014/model.ply",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          10.424173870822415
+        ]
+      },
+      "total_s": 10.424173870822415
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000015",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000015/model.ply",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          10.44918912788853
+        ]
+      },
+      "total_s": 10.44918912788853
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000016",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000016/model.ply",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          10.560231550130993
+        ]
+      },
+      "total_s": 10.560231550130993
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000017",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000017/model.ply",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          10.506723128957674
+        ]
+      },
+      "total_s": 10.506723128957674
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000018",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000018/model.ply",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          10.710348073858768
+        ]
+      },
+      "total_s": 10.710348073858768
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000019",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000019/model.ply",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          10.046003661118448
+        ]
+      },
+      "total_s": 10.046003661118448
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000020",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000020/model.ply",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          10.123829012038186
+        ]
+      },
+      "total_s": 10.123829012038186
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000021",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000021/model.ply",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          10.389555491972715
+        ]
+      },
+      "total_s": 10.389555491972715
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000022",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000022/model.ply",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          10.376897171838209
+        ]
+      },
+      "total_s": 10.376897171838209
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000023",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000023/model.ply",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          10.073305565165356
+        ]
+      },
+      "total_s": 10.073305565165356
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000024",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000024/model.ply",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          10.478345980867743
+        ]
+      },
+      "total_s": 10.478345980867743
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000025",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000025/model.ply",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          10.217975814826787
+        ]
+      },
+      "total_s": 10.217975814826787
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000026",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000026/model.ply",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          10.197618332924321
+        ]
+      },
+      "total_s": 10.197618332924321
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000027",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000027/model.ply",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          10.260886205127463
+        ]
+      },
+      "total_s": 10.260886205127463
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000028",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000028/model.ply",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          10.64614874497056
+        ]
+      },
+      "total_s": 10.64614874497056
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000029",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000029/model.ply",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          10.170482559828088
+        ]
+      },
+      "total_s": 10.170482559828088
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000030",
+      "num_views": 16,
+      "mesh": "object_database/tless/obj_000030/model.ply",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          10.226902461843565
+        ]
+      },
+      "total_s": 10.226902461843565
+    },
+    {
+      "dataset": "lmo",
+      "object_id": "obj_000001",
+      "num_views": 16,
+      "mesh": "object_database/lmo/obj_000001/model.ply",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          10.475705398945138
+        ]
+      },
+      "total_s": 10.475705398945138
+    },
+    {
+      "dataset": "lmo",
+      "object_id": "obj_000005",
+      "num_views": 16,
+      "mesh": "object_database/lmo/obj_000005/model.ply",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          11.411577431019396
+        ]
+      },
+      "total_s": 11.411577431019396
+    },
+    {
+      "dataset": "lmo",
+      "object_id": "obj_000006",
+      "num_views": 16,
+      "mesh": "object_database/lmo/obj_000006/model.ply",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          11.015639619901776
+        ]
+      },
+      "total_s": 11.015639619901776
+    },
+    {
+      "dataset": "lmo",
+      "object_id": "obj_000008",
+      "num_views": 16,
+      "mesh": "object_database/lmo/obj_000008/model.ply",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          10.711927599040791
+        ]
+      },
+      "total_s": 10.711927599040791
+    },
+    {
+      "dataset": "lmo",
+      "object_id": "obj_000009",
+      "num_views": 16,
+      "mesh": "object_database/lmo/obj_000009/model.ply",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          10.548122755950317
+        ]
+      },
+      "total_s": 10.548122755950317
+    },
+    {
+      "dataset": "lmo",
+      "object_id": "obj_000010",
+      "num_views": 16,
+      "mesh": "object_database/lmo/obj_000010/model.ply",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          11.214134803041816
+        ]
+      },
+      "total_s": 11.214134803041816
+    },
+    {
+      "dataset": "lmo",
+      "object_id": "obj_000011",
+      "num_views": 16,
+      "mesh": "object_database/lmo/obj_000011/model.ply",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          10.420651558088139
+        ]
+      },
+      "total_s": 10.420651558088139
+    },
+    {
+      "dataset": "lmo",
+      "object_id": "obj_000012",
+      "num_views": 16,
+      "mesh": "object_database/lmo/obj_000012/model.ply",
+      "render_rc": 0,
+      "render_views": 17,
+      "timings": {
+        "render": [
+          11.113911546068266
+        ]
+      },
+      "total_s": 11.113911546068266
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000001",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000001/textured_simple.obj",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          35.14403115212917
+        ]
+      },
+      "total_s": 35.14403115212917
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000002",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000002/textured_simple.obj",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          35.00299223093316
+        ]
+      },
+      "total_s": 35.00299223093316
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000003",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000003/textured_simple.obj",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          34.82756480993703
+        ]
+      },
+      "total_s": 34.82756480993703
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000004",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000004/textured_simple.obj",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          35.035751161165535
+        ]
+      },
+      "total_s": 35.035751161165535
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000005",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000005/textured_simple.obj",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          34.24396866397001
+        ]
+      },
+      "total_s": 34.24396866397001
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000006",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000006/textured_simple.obj",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          34.72446285095066
+        ]
+      },
+      "total_s": 34.72446285095066
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000007",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000007/textured_simple.obj",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          34.94454508810304
+        ]
+      },
+      "total_s": 34.94454508810304
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000008",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000008/textured_simple.obj",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          34.11201091390103
+        ]
+      },
+      "total_s": 34.11201091390103
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000009",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000009/textured_simple.obj",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          35.35965195694007
+        ]
+      },
+      "total_s": 35.35965195694007
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000010",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000010/textured_simple.obj",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          33.206844836939126
+        ]
+      },
+      "total_s": 33.206844836939126
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000011",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000011/textured_simple.obj",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          33.972880768822506
+        ]
+      },
+      "total_s": 33.972880768822506
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000012",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000012/textured_simple.obj",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          34.2979839250911
+        ]
+      },
+      "total_s": 34.2979839250911
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000013",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000013/textured_simple.obj",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          33.661234640982
+        ]
+      },
+      "total_s": 33.661234640982
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000014",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000014/textured_simple.obj",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          34.23492563911714
+        ]
+      },
+      "total_s": 34.23492563911714
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000015",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000015/textured_simple.obj",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          34.18778310995549
+        ]
+      },
+      "total_s": 34.18778310995549
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000016",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000016/textured_simple.obj",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          35.04561523604207
+        ]
+      },
+      "total_s": 35.04561523604207
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000017",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000017/textured_simple.obj",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          33.492438403191045
+        ]
+      },
+      "total_s": 33.492438403191045
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000018",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000018/textured_simple.obj",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          32.51808596518822
+        ]
+      },
+      "total_s": 32.51808596518822
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000019",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000019/textured_simple.obj",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          33.740403916919604
+        ]
+      },
+      "total_s": 33.740403916919604
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000020",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000020/textured_simple.obj",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          33.88076468301006
+        ]
+      },
+      "total_s": 33.88076468301006
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000021",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000021/textured_simple.obj",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          34.18622073601
+        ]
+      },
+      "total_s": 34.18622073601
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000001",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000001/model.ply",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          26.761798597173765
+        ]
+      },
+      "total_s": 26.761798597173765
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000002",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000002/model.ply",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          26.86659183097072
+        ]
+      },
+      "total_s": 26.86659183097072
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000003",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000003/model.ply",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          27.365639055147767
+        ]
+      },
+      "total_s": 27.365639055147767
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000004",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000004/model.ply",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          24.942921180976555
+        ]
+      },
+      "total_s": 24.942921180976555
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000005",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000005/model.ply",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          25.530721420887858
+        ]
+      },
+      "total_s": 25.530721420887858
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000006",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000006/model.ply",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          24.92793243401684
+        ]
+      },
+      "total_s": 24.92793243401684
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000007",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000007/model.ply",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          25.28688672091812
+        ]
+      },
+      "total_s": 25.28688672091812
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000008",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000008/model.ply",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          25.377995014889166
+        ]
+      },
+      "total_s": 25.377995014889166
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000009",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000009/model.ply",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          25.280070748878643
+        ]
+      },
+      "total_s": 25.280070748878643
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000010",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000010/model.ply",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          25.162416761973873
+        ]
+      },
+      "total_s": 25.162416761973873
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000011",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000011/model.ply",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          25.929381870897487
+        ]
+      },
+      "total_s": 25.929381870897487
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000012",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000012/model.ply",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          25.933949750848114
+        ]
+      },
+      "total_s": 25.933949750848114
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000013",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000013/model.ply",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          25.288280004169792
+        ]
+      },
+      "total_s": 25.288280004169792
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000014",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000014/model.ply",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          25.25981852901168
+        ]
+      },
+      "total_s": 25.25981852901168
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000015",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000015/model.ply",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          25.441240368178114
+        ]
+      },
+      "total_s": 25.441240368178114
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000016",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000016/model.ply",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          25.40277838590555
+        ]
+      },
+      "total_s": 25.40277838590555
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000017",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000017/model.ply",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          25.63024619803764
+        ]
+      },
+      "total_s": 25.63024619803764
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000018",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000018/model.ply",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          25.908973646117374
+        ]
+      },
+      "total_s": 25.908973646117374
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000019",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000019/model.ply",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          24.881339563056827
+        ]
+      },
+      "total_s": 24.881339563056827
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000020",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000020/model.ply",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          24.893537412863225
+        ]
+      },
+      "total_s": 24.893537412863225
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000021",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000021/model.ply",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          25.341571944998577
+        ]
+      },
+      "total_s": 25.341571944998577
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000022",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000022/model.ply",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          25.366476621013135
+        ]
+      },
+      "total_s": 25.366476621013135
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000023",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000023/model.ply",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          24.686916175996885
+        ]
+      },
+      "total_s": 24.686916175996885
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000024",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000024/model.ply",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          25.48674951517023
+        ]
+      },
+      "total_s": 25.48674951517023
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000025",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000025/model.ply",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          24.970537083921954
+        ]
+      },
+      "total_s": 24.970537083921954
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000026",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000026/model.ply",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          24.926014269934967
+        ]
+      },
+      "total_s": 24.926014269934967
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000027",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000027/model.ply",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          25.12577468995005
+        ]
+      },
+      "total_s": 25.12577468995005
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000028",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000028/model.ply",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          25.56075081299059
+        ]
+      },
+      "total_s": 25.56075081299059
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000029",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000029/model.ply",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          24.921235610963777
+        ]
+      },
+      "total_s": 24.921235610963777
+    },
+    {
+      "dataset": "tless",
+      "object_id": "obj_000030",
+      "num_views": 42,
+      "mesh": "object_database/tless/obj_000030/model.ply",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          25.157216269988567
+        ]
+      },
+      "total_s": 25.157216269988567
+    },
+    {
+      "dataset": "lmo",
+      "object_id": "obj_000001",
+      "num_views": 42,
+      "mesh": "object_database/lmo/obj_000001/model.ply",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          25.474322168854997
+        ]
+      },
+      "total_s": 25.474322168854997
+    },
+    {
+      "dataset": "lmo",
+      "object_id": "obj_000005",
+      "num_views": 42,
+      "mesh": "object_database/lmo/obj_000005/model.ply",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          26.78388193785213
+        ]
+      },
+      "total_s": 26.78388193785213
+    },
+    {
+      "dataset": "lmo",
+      "object_id": "obj_000006",
+      "num_views": 42,
+      "mesh": "object_database/lmo/obj_000006/model.ply",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          26.105980437016115
+        ]
+      },
+      "total_s": 26.105980437016115
+    },
+    {
+      "dataset": "lmo",
+      "object_id": "obj_000008",
+      "num_views": 42,
+      "mesh": "object_database/lmo/obj_000008/model.ply",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          25.6074872110039
+        ]
+      },
+      "total_s": 25.6074872110039
+    },
+    {
+      "dataset": "lmo",
+      "object_id": "obj_000009",
+      "num_views": 42,
+      "mesh": "object_database/lmo/obj_000009/model.ply",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          25.488452988909557
+        ]
+      },
+      "total_s": 25.488452988909557
+    },
+    {
+      "dataset": "lmo",
+      "object_id": "obj_000010",
+      "num_views": 42,
+      "mesh": "object_database/lmo/obj_000010/model.ply",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          26.6052381999325
+        ]
+      },
+      "total_s": 26.6052381999325
+    },
+    {
+      "dataset": "lmo",
+      "object_id": "obj_000011",
+      "num_views": 42,
+      "mesh": "object_database/lmo/obj_000011/model.ply",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          25.335514212027192
+        ]
+      },
+      "total_s": 25.335514212027192
+    },
+    {
+      "dataset": "lmo",
+      "object_id": "obj_000012",
+      "num_views": 42,
+      "mesh": "object_database/lmo/obj_000012/model.ply",
+      "render_rc": 0,
+      "render_views": 43,
+      "timings": {
+        "render": [
+          26.340918532107025
+        ]
+      },
+      "total_s": 26.340918532107025
+    }
+  ],
+  "stage1_quality_ndcg": {
+    "8": 0.5714,
+    "16": 0.582,
+    "32": 0.58,
+    "42": 0.5868
+  }
+}

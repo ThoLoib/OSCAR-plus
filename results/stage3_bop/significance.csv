@@ -1,0 +1,25 @@
+comparison,configuration_a,configuration_b,metric,group,n,delta,ci_lo,ci_hi,wilcoxon_p,wins_a,wins_b,verdict
+Gallery: partial vs full-mesh (cross),retrieval_cross_partial,retrieval_cross_fullmesh,hit1,ALL,12284,-0.03338,-0.04078,-0.02605,1.55994859418783e-18,884,1294,REAL
+Gallery: partial vs full-mesh (cross),retrieval_cross_partial,retrieval_cross_fullmesh,hit1,lmo,1445,-0.01384,-0.03322,0.00484,0.1593695473555009,91,111,not supported
+Gallery: partial vs full-mesh (cross),retrieval_cross_partial,retrieval_cross_fullmesh,hit1,tless,6716,-0.06224,-0.07341,-0.05137,1.3224291569570335e-27,528,946,REAL
+Gallery: partial vs full-mesh (cross),retrieval_cross_partial,retrieval_cross_fullmesh,hit1,ycbv,4123,0.00679,-0.00388,0.01722,0.21140873361326717,265,237,not supported
+Gallery: partial vs full-mesh (pc),retrieval_pc_partial,retrieval_pc_fullmesh,hit1,ALL,12284,0.07579,0.06773,0.08393,8.170885094514878e-76,1742,811,REAL
+Gallery: partial vs full-mesh (pc),retrieval_pc_partial,retrieval_pc_fullmesh,hit1,lmo,1445,-0.04567,-0.06851,-0.02353,6.285237771203312e-05,103,169,REAL
+Gallery: partial vs full-mesh (pc),retrieval_pc_partial,retrieval_pc_fullmesh,hit1,tless,6716,0.19074,0.17957,0.20161,2.3094577318668532e-209,1501,220,REAL
+Gallery: partial vs full-mesh (pc),retrieval_pc_partial,retrieval_pc_fullmesh,hit1,ycbv,4123,-0.06888,-0.0798,-0.05748,3.502225659367501e-33,138,422,REAL
+Query: cross vs pc (partial),retrieval_cross_partial,retrieval_pc_partial,hit1,ALL,12284,0.01815,0.00944,0.0267,3.425683118870708e-05,1560,1337,REAL
+Query: cross vs pc (partial),retrieval_cross_partial,retrieval_pc_partial,hit1,lmo,1445,0.06436,0.04291,0.08581,4.355114782768089e-09,172,79,REAL
+Query: cross vs pc (partial),retrieval_cross_partial,retrieval_pc_partial,hit1,tless,6716,-0.01831,-0.03112,-0.00551,0.005524418441510572,921,1044,REAL
+Query: cross vs pc (partial),retrieval_cross_partial,retrieval_pc_partial,hit1,ycbv,4123,0.06136,0.04899,0.07349,3.166964179608595e-22,467,214,REAL
+Shape channel: OSCAR+ vs OSCAR cascade,retrieval_cross_partial,retrieval_oscar_baseline,hit1,ALL,12284,0.16192,0.15329,0.17079,1.0240897832817485e-263,2638,649,REAL
+Shape channel: OSCAR+ vs OSCAR cascade,retrieval_cross_partial,retrieval_oscar_baseline,hit1,lmo,1445,0.16055,0.13772,0.18339,1.82943263541684e-38,276,44,REAL
+Shape channel: OSCAR+ vs OSCAR cascade,retrieval_cross_partial,retrieval_oscar_baseline,hit1,tless,6716,0.11778,0.10587,0.12984,1.982266755239926e-79,1274,483,REAL
+Shape channel: OSCAR+ vs OSCAR cascade,retrieval_cross_partial,retrieval_oscar_baseline,hit1,ycbv,4123,0.2343,0.2195,0.24933,9.84292625700625e-170,1088,122,REAL
+Geometry: without vs distance (cross),retrieval_cross_partial,retrieval_cross_geo_trimmed_distance,hit1,ALL,12284,0.05886,0.04884,0.06871,7.713794010136376e-31,2322,1599,REAL
+Geometry: without vs distance (cross),retrieval_cross_partial,retrieval_cross_geo_trimmed_distance,hit1,lmo,1445,-0.01522,-0.04429,0.01522,0.31327766284519865,227,249,not supported
+Geometry: without vs distance (cross),retrieval_cross_partial,retrieval_cross_geo_trimmed_distance,hit1,tless,6716,-0.0061,-0.01817,0.00581,0.3161562050651987,816,857,not supported
+Geometry: without vs distance (cross),retrieval_cross_partial,retrieval_cross_geo_trimmed_distance,hit1,ycbv,4123,0.19064,0.17196,0.2098,8.3670616583711e-78,1279,493,REAL
+Geometry: without vs fitness (cross),retrieval_cross_partial,retrieval_cross_geo_fitness,hit1,ALL,12284,0.05397,0.04388,0.06431,1.3820836860260073e-25,2342,1679,REAL
+Geometry: without vs fitness (cross),retrieval_cross_partial,retrieval_cross_geo_fitness,hit1,lmo,1445,-0.01592,-0.04567,0.01453,0.29730529597126076,232,255,not supported
+Geometry: without vs fitness (cross),retrieval_cross_partial,retrieval_cross_geo_fitness,hit1,tless,6716,-0.00491,-0.01697,0.0073,0.4266090591421512,845,878,tie
+Geometry: without vs fitness (cross),retrieval_cross_partial,retrieval_cross_geo_fitness,hit1,ycbv,4123,0.17439,0.15474,0.19355,4.8602343989618506e-64,1265,546,REAL

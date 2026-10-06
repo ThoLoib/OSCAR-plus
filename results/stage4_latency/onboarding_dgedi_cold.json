@@ -1,0 +1,172 @@
+{
+  "experiment": "stage4a_onboarding",
+  "base_gallery": "G_proxy (3b) = gso + housecat6d + itodd = 1257",
+  "stages": [
+    "dgedi"
+  ],
+  "view_counts": [
+    16,
+    42
+  ],
+  "n_objects": 3,
+  "provenance": {
+    "timestamp": "2026-09-04T23:22:00+0200",
+    "git_commit": "15fd476a",
+    "cpu_count": 24
+  },
+  "model_load_once_s": {},
+  "by_views": {
+    "16": {
+      "per_step": {
+        "dgedi": {
+          "n": 3,
+          "median": 11.296237770002335,
+          "mean": 11.664676283951849,
+          "std": 0.804649617684849,
+          "min": 11.110213739797473,
+          "max": 12.587577342055738,
+          "q25": 11.203225754899904,
+          "q75": 11.941907556029037,
+          "iqr": 0.7386818011291325,
+          "p95": 12.458443384850398,
+          "sum": 34.994028851855546
+        }
+      },
+      "per_object_total_s": {
+        "n": 3,
+        "median": 11.296237770002335,
+        "mean": 11.664676283951849,
+        "std": 0.804649617684849,
+        "min": 11.110213739797473,
+        "max": 12.587577342055738,
+        "q25": 11.203225754899904,
+        "q75": 11.941907556029037,
+        "iqr": 0.7386818011291325,
+        "p95": 12.458443384850398,
+        "sum": 34.994028851855546
+      }
+    },
+    "42": {
+      "per_step": {
+        "dgedi": {
+          "n": 3,
+          "median": 10.20934210694395,
+          "mean": 10.226594620306665,
+          "std": 0.03015386240553972,
+          "min": 10.209028922021389,
+          "max": 10.261412831954658,
+          "q25": 10.20918551448267,
+          "q75": 10.235377469449304,
+          "iqr": 0.026191954966634512,
+          "p95": 10.256205759453588,
+          "sum": 30.679783860919997
+        }
+      },
+      "per_object_total_s": {
+        "n": 3,
+        "median": 10.20934210694395,
+        "mean": 10.226594620306665,
+        "std": 0.03015386240553972,
+        "min": 10.209028922021389,
+        "max": 10.261412831954658,
+        "q25": 10.20918551448267,
+        "q75": 10.235377469449304,
+        "iqr": 0.026191954966634512,
+        "p95": 10.256205759453588,
+        "sum": 30.679783860919997
+      }
+    }
+  },
+  "records": [
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000001",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000001/textured_simple.obj",
+      "dgedi_rc": 0,
+      "dgedi_descriptors": 1,
+      "timings": {
+        "dgedi": [
+          11.110213739797473
+        ]
+      },
+      "total_s": 11.110213739797473
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000002",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000002/textured_simple.obj",
+      "dgedi_rc": 0,
+      "dgedi_descriptors": 1,
+      "timings": {
+        "dgedi": [
+          12.587577342055738
+        ]
+      },
+      "total_s": 12.587577342055738
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000003",
+      "num_views": 16,
+      "mesh": "object_database/ycbv/obj_000003/textured_simple.obj",
+      "dgedi_rc": 0,
+      "dgedi_descriptors": 1,
+      "timings": {
+        "dgedi": [
+          11.296237770002335
+        ]
+      },
+      "total_s": 11.296237770002335
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000001",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000001/textured_simple.obj",
+      "dgedi_rc": 0,
+      "dgedi_descriptors": 1,
+      "timings": {
+        "dgedi": [
+          10.261412831954658
+        ]
+      },
+      "total_s": 10.261412831954658
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000002",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000002/textured_simple.obj",
+      "dgedi_rc": 0,
+      "dgedi_descriptors": 1,
+      "timings": {
+        "dgedi": [
+          10.20934210694395
+        ]
+      },
+      "total_s": 10.20934210694395
+    },
+    {
+      "dataset": "ycbv",
+      "object_id": "obj_000003",
+      "num_views": 42,
+      "mesh": "object_database/ycbv/obj_000003/textured_simple.obj",
+      "dgedi_rc": 0,
+      "dgedi_descriptors": 1,
+      "timings": {
+        "dgedi": [
+          10.209028922021389
+        ]
+      },
+      "total_s": 10.209028922021389
+    }
+  ],
+  "stage1_quality_ndcg": {
+    "8": 0.5714,
+    "16": 0.582,
+    "32": 0.58,
+    "42": 0.5868
+  }
+}

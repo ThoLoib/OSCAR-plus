@@ -1,0 +1,17 @@
+configuration,dataset,provenance,n,d_sym_median_mm,d_sym_norm_median
+pose_decomposition_cross,ycbv,target_cad,1916,18.625,0.1391
+pose_decomposition_cross,ycbv,proxy,2207,21.106,0.1021
+pose_decomposition_cross,tless,target_cad,4542,6.614,0.0668
+pose_decomposition_cross,tless,proxy,2174,14.045,0.182
+pose_decomposition_cross,lmo,target_cad,284,15.349,0.097
+pose_decomposition_cross,lmo,proxy,1161,27.536,0.1651
+pose_decomposition_cross,ALL,target_cad,6742,10.354,0.0839
+pose_decomposition_cross,ALL,proxy,5542,20.102,0.1336
+pose_decomposition_cross_fullmesh,ycbv,target_cad,2266,19.154,0.1453
+pose_decomposition_cross_fullmesh,ycbv,proxy,1857,18.615,0.0937
+pose_decomposition_cross_fullmesh,tless,target_cad,5408,6.017,0.0578
+pose_decomposition_cross_fullmesh,tless,proxy,1308,21.419,0.2755
+pose_decomposition_cross_fullmesh,lmo,target_cad,325,14.792,0.0948
+pose_decomposition_cross_fullmesh,lmo,proxy,1120,32.154,0.1938
+pose_decomposition_cross_fullmesh,ALL,target_cad,7999,9.761,0.0791
+pose_decomposition_cross_fullmesh,ALL,proxy,4285,22.65,0.1433

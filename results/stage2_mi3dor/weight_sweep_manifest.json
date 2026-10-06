@@ -1,0 +1,25 @@
+{
+ "ts": "2026-09-25T00:44:32",
+ "git": "",
+ "grid": "66 points, step 0.1 (as in the Stage-1 sweep)",
+ "config": {
+  "partial": true,
+  "dino_pooling": "mean",
+  "num_views": 42,
+  "weights_prod": [
+   0.3,
+   0.4,
+   0.3
+  ],
+  "ulip_ckpt": "/ulip/checkpoints/ulip2_pointbert_10k.pt"
+ },
+ "selfcheck": {
+  "identity_samples": "300/300",
+  "base_ft": 0.6918,
+  "base_nn": 88.4381,
+  "production_ft": 0.6918,
+  "production_nn": 88.4381,
+  "queries": 10500
+ },
+ "fusion": "pipeline/step6_fusion._weighted_sum (assembly replicated, proven against fusion_mod.fuse by sampling)"
+}

@@ -1,0 +1,11 @@
+comparison,configuration_a,configuration_b,mean_d_NN_sub,median_d_NN_sub,ci_lo,ci_hi,wilcoxon_p,n_A_better,n_B_better,n_tied,ci_significant,wilcoxon_significant,verdict,n_paired
+shape enc: ULIP-2 vs Uni3D (isolated),shape_only,shape_only_uni3d,0.0181,0.0,0.0014,0.0352,0.0382,187,149,1765,YES,YES,REAL,2101
+shape enc: ULIP-2 vs Uni3D (fused),fusion,fusion_uni3d,-0.0043,0.0,-0.0162,0.0081,0.4987,84,93,1924,no,no,tie,2101
+colour: XYZ+RGB vs XYZ (isolated),shape_only,shape_only_xyz_checkpoint,-0.0324,0.0,-0.0509,-0.0133,0.0008,170,238,1693,YES,YES,REAL,2101
+colour: XYZ+RGB vs XYZ (fused),fusion,fusion_xyz_checkpoint,-0.0129,0.0,-0.0267,0.0005,0.0643,93,120,1888,no,no,tie,2101
+ref: partial vs full-mesh (isolated),shape_only,shape_only_fullmesh,0.0452,0.0,0.0262,0.0647,0.0,272,177,1652,YES,YES,REAL,2101
+ref: partial vs full-mesh (fused),fusion,fusion_fullmesh,-0.0186,0.0,-0.0352,-0.0019,0.0305,143,182,1776,YES,YES,REAL,2101
+appearance: DINOv2 vs SigLIP (isolated),appearance_only,appearance_only_siglip,0.0695,0.0,0.05,0.089,0.0,304,158,1639,YES,YES,REAL,2101
+combiner: weighted vs RRF (fused),fusion,fusion_rrf,0.0238,0.0,0.0109,0.0366,0.0002,117,67,1917,YES,YES,REAL,2101
+geometry: none vs GeDi+RANSAC (fused),fusion,fusion_geo_trimmed_distance,-0.1304,0.0,-0.1523,-0.108,0.0,157,431,1513,YES,YES,REAL,2101
+config: BASE 16v/k8 -> 42v/k5 (fused),fusion_views16_shape_topk8,fusion,-0.001,0.0,-0.0095,0.0076,0.8312,43,45,2013,no,no,tie,2101

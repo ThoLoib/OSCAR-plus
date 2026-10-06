@@ -1,0 +1,56 @@
+{
+ "ts": "2026-09-25T10:22:12",
+ "git": "",
+ "mode": "cross",
+ "grid": "66 points, step 0.1",
+ "config": "42v/k5 (SHAPE_AGG_VIEWS=42, ulip_view_topk=5, DINO 42v, partial references), GEOM_K=5",
+ "guard": {
+  "arm": "fusion_cross",
+  "base": {
+   "nDCG": 0.5587605992505045,
+   "hit1": 0.32889100428367446,
+   "NN_cat": 0.37077582103760115,
+   "MRR": 0.4432095827383796
+  },
+  "production": {
+   "nDCG": 0.5588,
+   "hit1": 0.3289
+  }
+ },
+ "best_hit1": {
+  "w_text": 0.0,
+  "w_view": 0.6,
+  "w_shape": 0.4,
+  "nDCG": 0.5516,
+  "hit1": 0.3451,
+  "NN_cat": 0.3812,
+  "MRR": 0.4383
+ },
+ "best_nDCG": {
+  "w_text": 0.2,
+  "w_view": 0.6,
+  "w_shape": 0.2,
+  "nDCG": 0.5606,
+  "hit1": 0.3403,
+  "NN_cat": 0.3803,
+  "MRR": 0.4523
+ },
+ "best_without_shape_hit1": {
+  "w_text": 0.0,
+  "w_view": 1.0,
+  "w_shape": 0.0,
+  "nDCG": 0.5506,
+  "hit1": 0.3337,
+  "NN_cat": 0.3793,
+  "MRR": 0.4505
+ },
+ "best_without_shape_nDCG": {
+  "w_text": 0.2,
+  "w_view": 0.8,
+  "w_shape": 0.0,
+  "nDCG": 0.5558,
+  "hit1": 0.3294,
+  "NN_cat": 0.3793,
+  "MRR": 0.4555
+ }
+}

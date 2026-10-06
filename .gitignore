@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.venv/
+venv/
+
+# Editor / OS
+.DS_Store
+.vscode/
+*:Zone.Identifier
+
+# Input data (downloaded; see README "Datasets")
+/eval/
+/object_database/
+
+# Generated galleries: renderings, partial point clouds, embedding caches
+/object_images/
+
+# Generated caches (dGeDi descriptor galleries, query-embedding caches, ...)
+/caches/
+
+# Outputs of new runs (paths.yaml: output_dir) — never write into results/
+/runs/
+/pipeline_output/
+
+# Logs
+/logs/
+*.log
+
+# Vendored third-party checkouts (see README setup)
+/third_party/

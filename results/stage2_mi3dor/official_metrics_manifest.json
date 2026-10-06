@@ -1,0 +1,239 @@
+{
+ "ts": "2026-09-25T10:06:53",
+ "evaluator_source": "github.com/tianbao-li/MI3DOR Retrieval/cross_performance.m, commit 4325c24c91553283ec98d948513063f659771767",
+ "port": {
+  "file": "evaluation/mi3dor_official_metrics.py",
+  "commit": "c94226f6",
+  "sha256": "100bfc847e2d0a9a2ba154274a0412abdec36e339f49819d9e678a27a374ecdf"
+ },
+ "script": {
+  "file": "experiments/stage2_official_metrics.py",
+  "commit": "5eb9574d",
+  "sha256": "57511dfea8a398ad453fe00107eefcf35078d3e0c8a0469150ff15d00b9840b9"
+ },
+ "traces_since": "eval_common commit ea84ffb8 (2026-08-07): eval_trace with num_rel_true + len/rel_positions per arm",
+ "inputs": {
+  "fused_partial": {
+   "path": "runs/stage2_mi3dor/partial/results_topk_15.json",
+   "size_bytes": 276973219,
+   "date": "2026-09-07T00:44:24",
+   "sha256": "ebed36873d213b2548d2e9cb21ef8a13b8d55c986cc3675ce86088e236f8e35f",
+   "gallery": "partial",
+   "views": 42,
+   "integrity": {
+    "records": 10500,
+    "C_min": 31,
+    "C_max": 250,
+    "T_max": 250,
+    "status": "OK"
+   }
+  },
+  "fused_fullmesh": {
+   "path": "runs/stage2_mi3dor/fullmesh/results_topk_15.json",
+   "size_bytes": 276906452,
+   "date": "2026-08-27T09:57:46",
+   "sha256": "c8f9626b216a1c8e176bf287e916662cdf2833856f5b64430aa1a76423d3b867",
+   "gallery": "fullmesh",
+   "views": 42,
+   "integrity": {
+    "records": 10500,
+    "C_min": 31,
+    "C_max": 250,
+    "T_max": 250,
+    "status": "OK"
+   }
+  },
+  "legacy_oscar_views8": {
+   "path": "runs/stage2_mi3dor_views8/fullmesh/results_topk_15.json",
+   "size_bytes": 277063163,
+   "date": "2026-08-27T20:07:05",
+   "sha256": "77b79dffca89c1bdcb94ee61b2836f9125a9af1f25c2a0c73928acc4a7629e32",
+   "gallery": "fullmesh",
+   "views": 8,
+   "integrity": {
+    "records": 10500,
+    "C_min": 31,
+    "C_max": 250,
+    "T_max": 250,
+    "status": "OK"
+   }
+  }
+ },
+ "w1": {
+  "fused_partial": {
+   "clip_only": {
+    "NN_prod": 0.6795238095238095,
+    "FT_prod": 0.5747111128187761,
+    "NN_traces": 0.6795238095238095,
+    "FT_traces": 0.5747111128187761,
+    "status": "exact (1e-9)"
+   },
+   "dino_only_full": {
+    "NN_prod": 0.8302857142857143,
+    "FT_prod": 0.6292451704181977,
+    "NN_traces": 0.8302857142857143,
+    "FT_traces": 0.6292451704181977,
+    "status": "exact (1e-9)"
+   },
+   "ulip_only_full": {
+    "NN_prod": 0.6811428571428572,
+    "FT_prod": 0.4529154691386179,
+    "NN_traces": 0.6811428571428572,
+    "FT_traces": 0.4529154691386179,
+    "status": "exact (1e-9)"
+   },
+   "clip_dino_ulip_full": {
+    "NN_prod": 0.8843809523809525,
+    "FT_prod": 0.6917522612915135,
+    "NN_traces": 0.8843809523809524,
+    "FT_traces": 0.6917522612915135,
+    "status": "exact (1e-9)"
+   },
+   "oscar_maxview": {
+    "NN_prod": 0.8487619047619047,
+    "FT_prod": 0.5747111128187761,
+    "NN_traces": 0.8487619047619047,
+    "FT_traces": 0.5747111128187761,
+    "status": "exact (1e-9)"
+   },
+   "oscar_softmax": {
+    "NN_prod": 0.8503809523809523,
+    "FT_prod": 0.5747111128187761,
+    "NN_traces": 0.8503809523809523,
+    "FT_traces": 0.5747111128187761,
+    "status": "exact (1e-9)"
+   },
+   "clip_pruned_dino_ulip": {
+    "NN_prod": 0.8570476190476191,
+    "FT_prod": 0.5747111128187761,
+    "NN_traces": 0.8570476190476191,
+    "FT_traces": 0.5747111128187761,
+    "status": "exact (1e-9)"
+   }
+  },
+  "fused_fullmesh": {
+   "clip_only": {
+    "NN_prod": 0.6795238095238095,
+    "FT_prod": 0.5747111128187761,
+    "NN_traces": 0.6795238095238095,
+    "FT_traces": 0.5747111128187761,
+    "status": "exact (1e-9)"
+   },
+   "dino_only_full": {
+    "NN_prod": 0.8302857142857143,
+    "FT_prod": 0.6292451704181977,
+    "NN_traces": 0.8302857142857143,
+    "FT_traces": 0.6292451704181977,
+    "status": "exact (1e-9)"
+   },
+   "ulip_only_full": {
+    "NN_prod": 0.781047619047619,
+    "FT_prod": 0.5100333649029966,
+    "NN_traces": 0.7810476190476191,
+    "FT_traces": 0.5100333649029966,
+    "status": "exact (1e-9)"
+   },
+   "clip_dino_ulip_full": {
+    "NN_prod": 0.8657142857142857,
+    "FT_prod": 0.6817683037380236,
+    "NN_traces": 0.8657142857142858,
+    "FT_traces": 0.6817683037380236,
+    "status": "exact (1e-9)"
+   },
+   "oscar_maxview": {
+    "NN_prod": 0.8487619047619047,
+    "FT_prod": 0.5747111128187761,
+    "NN_traces": 0.8487619047619047,
+    "FT_traces": 0.5747111128187761,
+    "status": "exact (1e-9)"
+   },
+   "oscar_softmax": {
+    "NN_prod": 0.8503809523809523,
+    "FT_prod": 0.5747111128187761,
+    "NN_traces": 0.8503809523809523,
+    "FT_traces": 0.5747111128187761,
+    "status": "exact (1e-9)"
+   },
+   "clip_pruned_dino_ulip": {
+    "NN_prod": 0.8652380952380951,
+    "FT_prod": 0.5747111128187761,
+    "NN_traces": 0.8652380952380953,
+    "FT_traces": 0.5747111128187761,
+    "status": "exact (1e-9)"
+   }
+  },
+  "legacy_oscar_views8": {
+   "clip_only": {
+    "NN_prod": 0.6795238095238095,
+    "FT_prod": 0.5747111128187761,
+    "NN_traces": 0.6795238095238095,
+    "FT_traces": 0.5747111128187761,
+    "status": "exact (1e-9)"
+   },
+   "dino_only_full": {
+    "NN_prod": 0.8196190476190476,
+    "FT_prod": 0.5910297155212918,
+    "NN_traces": 0.8196190476190476,
+    "FT_traces": 0.5910297155212918,
+    "status": "exact (1e-9)"
+   },
+   "ulip_only_full": {
+    "NN_prod": 0.781047619047619,
+    "FT_prod": 0.5100333649029966,
+    "NN_traces": 0.7810476190476191,
+    "FT_traces": 0.5100333649029966,
+    "status": "exact (1e-9)"
+   },
+   "clip_dino_ulip_full": {
+    "NN_prod": 0.8661904761904762,
+    "FT_prod": 0.6647686488999957,
+    "NN_traces": 0.8661904761904762,
+    "FT_traces": 0.6647686488999957,
+    "status": "exact (1e-9)"
+   },
+   "oscar_maxview": {
+    "NN_prod": 0.8440000000000001,
+    "FT_prod": 0.574710239074783,
+    "NN_traces": 0.844,
+    "FT_traces": 0.574710239074783,
+    "status": "exact (1e-9)"
+   },
+   "oscar_softmax": {
+    "NN_prod": 0.8441904761904762,
+    "FT_prod": 0.574710239074783,
+    "NN_traces": 0.8441904761904762,
+    "FT_traces": 0.574710239074783,
+    "status": "exact (1e-9)"
+   },
+   "clip_pruned_dino_ulip": {
+    "NN_prod": 0.8578095238095238,
+    "FT_prod": 0.574710239074783,
+    "NN_traces": 0.8578095238095238,
+    "FT_traces": 0.574710239074783,
+    "status": "exact (1e-9)"
+   }
+  }
+ },
+ "w2": {
+  "fused_partial/clip_only": {
+   "status": "matched (4 decimal places)"
+  },
+  "fused_partial/dino_only_full": {
+   "status": "matched (4 decimal places)"
+  },
+  "fused_partial/ulip_only_full": {
+   "status": "matched (4 decimal places)"
+  },
+  "fused_partial/clip_dino_ulip_full": {
+   "status": "matched (4 decimal places)"
+  }
+ },
+ "w3": {
+  "fused_fullmesh/ulip_only_full": {
+   "status": "matched (4 decimal places)"
+  },
+  "fused_fullmesh/clip_dino_ulip_full": {
+   "status": "matched (4 decimal places)"
+  }
+ }
+}

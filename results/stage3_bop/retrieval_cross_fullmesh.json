@@ -1,0 +1,63 @@
+{
+  "dataset": "ALL",
+  "mode": "3a",
+  "gallery_size": 1316,
+  "target_in_gallery": true,
+  "n_queries_evaluated": 12284,
+  "n_missing_rgb": 0,
+  "n_queries": 12284,
+  "recall@1": 0.5151416476717682,
+  "recall@5": 0.7880983393031585,
+  "recall@10": 0.8504558775643113,
+  "mrr": 0.6378943961372683,
+  "n_target_found": 12284,
+  "datasets": [
+    "ycbv",
+    "tless",
+    "lmo"
+  ],
+  "per_dataset": {
+    "ycbv": {
+      "dataset": "ycbv",
+      "mode": "3a",
+      "gallery_size": 1316,
+      "target_in_gallery": true,
+      "n_queries_evaluated": 4123,
+      "n_missing_rgb": 0,
+      "n_queries": 4123,
+      "recall@1": 0.7256851806936696,
+      "recall@5": 0.9097744360902256,
+      "recall@10": 0.9362114964831434,
+      "mrr": 0.8035068042626085,
+      "n_target_found": 4123
+    },
+    "tless": {
+      "dataset": "tless",
+      "mode": "3a",
+      "gallery_size": 1316,
+      "target_in_gallery": true,
+      "n_queries_evaluated": 6716,
+      "n_missing_rgb": 0,
+      "n_queries": 6716,
+      "recall@1": 0.3938356164383562,
+      "recall@5": 0.7254318046456224,
+      "recall@10": 0.8074746873138773,
+      "mrr": 0.5448800610270103,
+      "n_target_found": 6716
+    },
+    "lmo": {
+      "dataset": "lmo",
+      "mode": "3a",
+      "gallery_size": 1316,
+      "target_in_gallery": true,
+      "n_queries_evaluated": 1445,
+      "n_missing_rgb": 0,
+      "n_queries": 1445,
+      "recall@1": 0.4782006920415225,
+      "recall@5": 0.7321799307958478,
+      "recall@10": 0.8055363321799308,
+      "mrr": 0.5976620888015626,
+      "n_target_found": 1445
+    }
+  }
+}
